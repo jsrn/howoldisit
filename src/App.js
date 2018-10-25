@@ -32,6 +32,7 @@ class App extends Component {
         { name: "Java", released: new Date(1996, 9, 10) },
         { name: "Javascript", released: new Date(1995, 11, 4) },
         { name: "jQuery", released: new Date(2006, 7, 26) },
+        { name: "Keras", released: new Date(2015, 3, 27) },
         { name: "Kotlin", released: new Date(2016, 1, 15) },
         { name: "Laravel", released: new Date(2011, 8, 9) },
         { name: "Node.js", released: new Date(2009, 4, 27) },
