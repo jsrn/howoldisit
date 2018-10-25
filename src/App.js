@@ -33,7 +33,7 @@ class App extends Component {
         { name: "Haskell", released: new Date(1990, 0, 1) },
         { name: "HTML", released: new Date(1993, 5, 1) },
         { name: "Java", released: new Date(1996, 9, 10) },
-        { name: "Javascript", released: new Date(1995, 11, 4) },
+        { name: "JavaScript", released: new Date(1995, 11, 4) },
         { name: "jQuery", released: new Date(2006, 7, 26) },
         { name: "Keras", released: new Date(2015, 3, 27) },
         { name: "Kotlin", released: new Date(2016, 1, 15) },
