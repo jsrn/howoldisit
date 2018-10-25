@@ -51,6 +51,7 @@ class App extends Component {
         { name: "Ruby", released: new Date(1995, 11, 21) },
         { name: "Rust", released: new Date(2015, 5, 5) },
         { name: "Sass", released: new Date(2006, 10, 28) },
+        { name: "scikit-learn", released: new Date(2007, 5, 1) },
         { name: "Scala", released: new Date(2004, 1, 20) },        
         { name: "Swift", released: new Date(2014, 5, 2) },
         { name: "Symfony 2", released: new Date(2011, 6, 0) },
