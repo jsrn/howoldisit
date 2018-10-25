@@ -8,6 +8,7 @@ class App extends Component {
     this.state = {
       filter: "",
       technologies: [
+        // Please maintain alphabetical order when you add a technology :)
         // Remember that months are zero-indexed in javascript date objects
         { name: "Angular", released: new Date(2016, 8, 14) },
         { name: "AngularJS", released: new Date(2010, 9, 20) },
@@ -17,6 +18,7 @@ class App extends Component {
         { name: "Drupal", released: new Date(2000, 4, 18) },
         { name: "Ember.js", released: new Date(2011, 11, 8) },
         { name: "Flask", released: new Date(2010, 3, 1) },
+        { name: "Go", released: new Date(2009, 9, 10) },
         { name: "Javascript", released: new Date(1995, 11, 4) },
         { name: "jQuery", released: new Date(2006, 7, 26) },
         { name: "Laravel", released: new Date(2011, 8, 9) },
@@ -30,8 +32,7 @@ class App extends Component {
         { name: "Ruby on Rails", released: new Date(2005, 11, 21) },
         { name: "This project", released: new Date(2018, 9, 25) },
         { name: "Vue", released: new Date(2014, 1, 1) },
-        { name: "WordPress", released: new Date(2003, 4, 27) },
-        { name: "Go", released: new Date(2009, 9, 10) }
+        { name: "WordPress", released: new Date(2003, 4, 27) }
       ]
     };
 
