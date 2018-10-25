@@ -24,6 +24,7 @@ class App extends Component {
         { name: "Elixir", released: new Date(2011, 0, 1) },
         { name: "Ember.js", released: new Date(2011, 11, 8) },
         { name: "Flask", released: new Date(2010, 3, 1) },
+        { name: "Fortran", released: new Date(1956, 9, 15) },
         { name: "Gensim", released: new Date(2009, 7, 31) },
         { name: "Go", released: new Date(2009, 9, 10) },
         { name: "HTML", released: new Date(1993, 5, 1) },
