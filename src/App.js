@@ -8,18 +8,18 @@ class App extends Component {
     this.state = {
       filter: "",
       technologies: [
-        { name: "Angular", released: new Date(2016, 9, 14) },
-        { name: "AngularJS", released: new Date(2010, 10, 20) },
-        { name: "Babbage Assembly", released: new Date(1971, 1, 1) },
-        { name: "Ember.js", released: new Date(2011, 12, 8) },
-        { name: "Javascript", released: new Date(1995, 12, 4) },
-        { name: "jQuery", released: new Date(2006, 8, 26) },
-        { name: "Node.js", released: new Date(2009, 5, 27) },
-        { name: "React", released: new Date(2013, 5, 29) },
-        { name: "Ruby", released: new Date(1995, 12, 21) },
-        { name: "Ruby on Rails", released: new Date(2005, 12, 21) },
-        { name: "This project", released: new Date(2018, 10, 25) },
-        { name: "Vue", released: new Date(2014, 2, 1) }
+        { name: "Angular", released: new Date(2016, 8, 14) },
+        { name: "AngularJS", released: new Date(2010, 9, 20) },
+        { name: "Babbage Assembly", released: new Date(1971, 0, 1) },
+        { name: "Ember.js", released: new Date(2011, 11, 8) },
+        { name: "Javascript", released: new Date(1995, 11, 4) },
+        { name: "jQuery", released: new Date(2006, 7, 26) },
+        { name: "Node.js", released: new Date(2009, 4, 27) },
+        { name: "React", released: new Date(2013, 4, 29) },
+        { name: "Ruby", released: new Date(1995, 11, 21) },
+        { name: "Ruby on Rails", released: new Date(2005, 11, 21) },
+        { name: "This project", released: new Date(2018, 9, 25) },
+        { name: "Vue", released: new Date(2014, 1, 1) }
       ]
     };
 
