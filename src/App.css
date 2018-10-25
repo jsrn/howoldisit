@@ -23,12 +23,14 @@
 
 .App-header input {
   font-size: 1em;
+  max-width: 90vw;
 }
 
 main {
-  width: 70ch;
+  max-width: 70ch;
   margin: 0 auto;
   font-size: 1.5em;
+  padding: 5px;
 }
 
 main p {
