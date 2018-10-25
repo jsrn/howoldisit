@@ -14,6 +14,7 @@ class App extends Component {
         { name: "AngularJS", released: new Date(2010, 9, 20) },
         { name: "Babbage Assembly", released: new Date(1971, 0, 1) },
         { name: "Bootstrap 4", released: new Date(2018, 0, 18) },
+        { name: "CakePHP", released: new Date(2005, 3, 1) },
         { name: "Django", released: new Date(2005, 6, 15) },
         { name: "Drupal", released: new Date(2000, 4, 18) },
         { name: "Ember.js", released: new Date(2011, 11, 8) },
