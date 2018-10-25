@@ -24,6 +24,7 @@ class App extends Component {
         { name: "Laravel", released: new Date(2011, 8, 9) },
         { name: "Node.js", released: new Date(2009, 4, 27) },
         { name: "Sass", released: new Date(2006, 10, 28) },
+        { name: "Swift", released: new Date(2014, 5, 2) },
         { name: "PHP", released: new Date(1995, 5, 8) },
         { name: "Python 2", released: new Date(1991, 1, 20) },
         { name: "Python 3", released: new Date(2008, 11, 3) },
@@ -32,6 +33,7 @@ class App extends Component {
         { name: "Ruby on Rails", released: new Date(2005, 11, 21) },
         { name: "This project", released: new Date(2018, 9, 25) },
         { name: "Vue", released: new Date(2014, 1, 1) },
+        { name: "Windows 10", released: new Date(2015, 6, 29) },
         { name: "WordPress", released: new Date(2003, 4, 27) }
       ]
     };
