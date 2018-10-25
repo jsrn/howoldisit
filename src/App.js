@@ -33,6 +33,7 @@ class App extends Component {
         { name: "Python 2", released: new Date(1991, 1, 20) },
         { name: "Python 3", released: new Date(2008, 11, 3) },
         { name: "React", released: new Date(2013, 4, 29) },
+        { name: "React Native", released: new Date(2016, 2, 24) },
         { name: "Ruby on Rails", released: new Date(2005, 11, 21) },
         { name: "Ruby", released: new Date(1995, 11, 21) },
         { name: "Sass", released: new Date(2006, 10, 28) },
