@@ -24,7 +24,8 @@ class App extends Component {
         { name: "Ruby", released: new Date(1995, 11, 21) },
         { name: "Ruby on Rails", released: new Date(2005, 11, 21) },
         { name: "This project", released: new Date(2018, 9, 25) },
-        { name: "Vue", released: new Date(2014, 1, 1) }
+        { name: "Vue", released: new Date(2014, 1, 1) },
+        { name: "Wordpress", released: new Date(2003, 5, 27) }
       ]
     };
 
