@@ -72,7 +72,7 @@ class App extends Component {
         </header>
 
         <main>
-          <p>This is a handy guide for tech recruiters who ask for fifteen years experience in technologies that have only existed for three months. We laugh at you. We all gather around at our hackathons and we laugh at you. You don't want us to laugh at you, do you?</p>
+          <p>This is a handy tool for tech recruiters who ask for fifteen years experience in technologies that have only existed for three months.</p>
           
           {rows}
           
