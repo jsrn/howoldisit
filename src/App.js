@@ -38,6 +38,7 @@ class App extends Component {
         { name: "React", released: new Date(2013, 4, 29) },
         { name: "Ruby on Rails", released: new Date(2005, 11, 21) },
         { name: "Ruby", released: new Date(1995, 11, 21) },
+        { name: "Rust", released: new Date(2010, 7, 10) },
         { name: "Sass", released: new Date(2006, 10, 28) },
         { name: "Swift", released: new Date(2014, 5, 2) },
         { name: "This project", released: new Date(2018, 9, 25) },
