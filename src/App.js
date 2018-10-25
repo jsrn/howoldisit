@@ -13,6 +13,7 @@ class App extends Component {
         { name: "Babbage Assembly", released: new Date(1971, 1, 1) },
         { name: "Ember.js", released: new Date(2011, 12, 8) },
         { name: "Javascript", released: new Date(1995, 12, 4) },
+        { name: "jQuery", released: new Date(2006, 8, 26) },
         { name: "Node.js", released: new Date(2009, 5, 27) },
         { name: "React", released: new Date(2013, 5, 29) },
         { name: "Ruby", released: new Date(1995, 12, 21) },
