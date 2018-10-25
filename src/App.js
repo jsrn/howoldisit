@@ -12,6 +12,7 @@ class App extends Component {
         // Remember that months are zero-indexed in javascript date objects
         { name: "Angular", released: new Date(2016, 8, 14) },
         { name: "AngularJS", released: new Date(2010, 9, 20) },
+        { name: "BackBoneJS", released: new Date(2010, 9, 13) },
         { name: "Babbage Assembly", released: new Date(1971, 0, 1) },
         { name: "Bash", released: new Date(1989, 5, 8) },
         { name: "BASIC", released: new Date(1964, 4, 1) },
