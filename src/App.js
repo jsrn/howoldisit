@@ -23,6 +23,7 @@ class App extends Component {
         { name: "Drupal", released: new Date(2000, 4, 18) },
         { name: "Elixir", released: new Date(2011, 0, 1) },
         { name: "Ember.js", released: new Date(2011, 11, 8) },
+        { name: "Erlang", released: new Date(1998, 11, 8) },
         { name: "Flask", released: new Date(2010, 3, 1) },
         { name: "Gensim", released: new Date(2009, 7, 31) },
         { name: "Go", released: new Date(2009, 9, 10) },
