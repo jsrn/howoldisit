@@ -41,6 +41,7 @@ class App extends Component {
         { name: "Rust", released: new Date(2015, 5, 5) },
         { name: "Sass", released: new Date(2006, 10, 28) },
         { name: "Swift", released: new Date(2014, 5, 2) },
+        { name: "Tensorflow", released: new Date(2015, 11, 9) },
         { name: "This project", released: new Date(2018, 9, 25) },
         { name: "TypeScript", released: new Date(2012, 9, 1) },
         { name: "Vue", released: new Date(2014, 1, 1) },
