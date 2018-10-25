@@ -10,7 +10,9 @@ class App extends Component {
       technologies: [
         { name: "Angular", released: new Date(2016, 9, 14) },
         { name: "AngularJS", released: new Date(2010, 10, 20) },
+        { name: "Babbage Assembly", released: new Date(1971, 1, 1) },
         { name: "Ember.js", released: new Date(2011, 12, 8) },
+        { name: "Javascript", released: new Date(1995, 12, 4) },
         { name: "Node.js", released: new Date(2009, 5, 27) },
         { name: "React", released: new Date(2013, 5, 29) },
         { name: "Ruby", released: new Date(1995, 12, 21) },
@@ -71,6 +73,8 @@ class App extends Component {
           <p>This is a handy guide for tech recruiters who ask for fifteen years experience in technologies that have only existed for three months. We laugh at you. We all gather around at our hackathons and we laugh at you. You don't want us to laugh at you, do you?</p>
           
           {rows}
+          
+          <p>Missing a technology? Find this repo on <a href="https://github.com/jsrn/howoldisit">GitHub</a>. Want a piece of me? Hurl abuse on <a href="https://twitter.com/jsrndoftime">Twitter</a>.</p>
         </main>
       </div>
     );
