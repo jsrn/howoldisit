@@ -23,6 +23,7 @@ class App extends Component {
         { name: "Ember.js", released: new Date(2011, 11, 8) },
         { name: "Flask", released: new Date(2010, 3, 1) },
         { name: "Go", released: new Date(2009, 9, 10) },
+        { name: "Java", released: new Date(1996, 9, 10) },
         { name: "Javascript", released: new Date(1995, 11, 4) },
         { name: "jQuery", released: new Date(2006, 7, 26) },
         { name: "Kotlin", released: new Date(2016, 1, 15) },
