@@ -26,6 +26,7 @@ class App extends Component {
         { name: "Flask", released: new Date(2010, 3, 1) },
         { name: "Gensim", released: new Date(2009, 7, 31) },
         { name: "Go", released: new Date(2009, 9, 10) },
+        { name: "Haskell", released: new Date(1990, 0, 1)},
         { name: "HTML", released: new Date(1993, 5, 1) },
         { name: "Java", released: new Date(1996, 9, 10) },
         { name: "Javascript", released: new Date(1995, 11, 4) },
