@@ -8,6 +8,7 @@ class App extends Component {
     this.state = {
       filter: "",
       technologies: [
+        // Remember that months are zero-indexed in javascript date objects
         { name: "Angular", released: new Date(2016, 8, 14) },
         { name: "AngularJS", released: new Date(2010, 9, 20) },
         { name: "Babbage Assembly", released: new Date(1971, 0, 1) },
