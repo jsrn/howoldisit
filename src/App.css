@@ -25,10 +25,14 @@
   font-size: 1em;
 }
 
-table {
-  width: max-content;
+main {
+  width: 70ch;
   margin: 0 auto;
   font-size: 1.5em;
+}
+
+main p {
+  line-height: 1.6em;
 }
 
 @keyframes App-logo-spin {

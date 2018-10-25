@@ -8,6 +8,8 @@ class App extends Component {
     this.state = {
       filter: "",
       technologies: [
+        { name: "Angular", released: new Date(2016, 9, 14) },
+        { name: "AngularJS", released: new Date(2010, 10, 20) },
         { name: "Ember.js", released: new Date(2011, 12, 8) },
         { name: "Node.js", released: new Date(2009, 5, 27) },
         { name: "React", released: new Date(2013, 5, 29) },
@@ -47,10 +49,9 @@ class App extends Component {
 
     for (let i = 0; i < this.state.technologies.length; i++) {
       rows.push(
-        <tr key={this.state.technologies[i].name} style={this.rowStyle(this.state.technologies[i].name)}>
-          <td>{this.state.technologies[i].name}</td>
-          <td>{this.daysSince(this.state.technologies[i].released)} years</td>
-        </tr>
+        <p key={this.state.technologies[i].name} style={this.rowStyle(this.state.technologies[i].name)}>
+          <strong>{this.state.technologies[i].name}</strong> has been out for <strong>{this.daysSince(this.state.technologies[i].released)} years</strong>
+        </p>
       );
 
       options.push(
@@ -67,17 +68,9 @@ class App extends Component {
         </header>
 
         <main>
-          <table>
-            <thead>
-              <tr>
-                <th>Technology</th>
-                <th>How Long Has It Been Out?</th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows}
-            </tbody>
-          </table>
+          <p>This is a handy guide for tech recruiters who ask for fifteen years experience in technologies that have only existed for three months. We laugh at you. We all gather around at our hackathons and we laugh at you. You don't want us to laugh at you, do you?</p>
+          
+          {rows}
         </main>
       </div>
     );
