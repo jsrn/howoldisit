@@ -39,6 +39,7 @@ const technologies = [
   { name: "Hyper-V", released: new Date(2008, 5, 26) },
   { name: "Java", released: new Date(1996, 9, 10) },
   { name: "JavaScript", released: new Date(1995, 11, 4) },
+  { name: "Jekyll", released: new Date(2008, 10, 17) },
   { name: "jQuery", released: new Date(2006, 7, 26) },
   { name: "Karaf", released: new Date(2010, 7, 23) },
   { name: "Keras", released: new Date(2015, 3, 27) },
