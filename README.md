@@ -7,3 +7,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 A big thanks to [all of the contributors](https://github.com/jsrn/howoldisit/graphs/contributors) for massively expanding this beyond the tiny handful of technologies I had listed to begin with.
 
 View the page [here](https://howoldisit.glitch.me/)!
+
+P.S. If you are a recruiter and you are reading this, obviously it is not *you* that we are poking fun at! Haha! Ha! Haa... please don't blacklist us from the industry.
