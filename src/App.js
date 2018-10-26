@@ -32,7 +32,7 @@ class App extends Component {
     return style;
   }
 
-  daysSince(date) {
+  yearsSince(date) {
     return Math.floor((new Date() - date) / (365 * 60 * 24 * 1000 * 60));
   }
 
@@ -49,10 +49,11 @@ class App extends Component {
     let options = [];
 
     for (let i = 0; i < this.state.technologies.length; i++) {
+      let years = this.yearsSince(this.state.technologies[i].released)
       rows.push(
         <p key={this.state.technologies[i].name} style={this.rowStyle(this.state.technologies[i].name)}>
           <Icon icon={this.state.technologies[i].icon} />
-          <strong>{this.state.technologies[i].name}</strong> has been out for <strong>{years === 0 ? 'less than a year' : `${years} year${years === 1 ? '' : 's'}`}</strong>
+          <strong>{this.state.technologies[i].name}</strong> has been out for <strong>{years < 1 ? 'less than a' : years} year{years > 1 ? 's' : ''}</strong>
         </p>
       );
 
