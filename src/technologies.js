@@ -83,7 +83,8 @@ const technologies = [
   { name: "Vulkan", released: new Date(2016, 1, 16) },
   { name: "Windows 10", released: new Date(2015, 6, 29) },
   { name: "WordPress", released: new Date(2003, 4, 27) },
-  { name: "Xamarin Forms", released: new Date(2014, 4, 28) }
+  { name: "Xamarin Forms", released: new Date(2014, 4, 28) },
+  { name: "Yaml", released: new Date(2001, 5, 11) },
 ];
 
 export default technologies;
