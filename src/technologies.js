@@ -16,6 +16,7 @@
     { name: "C#", released: new Date(2001, 11, 1) },
     { name: "CakePHP", released: new Date(2005, 3, 1) },
     { name: "CodeIgniter", released: new Date(2006, 2, 28) },
+    { name: "CouchDB", released: new Date(2005, 2, 01) },
     { name: "Clojure", released: new Date(2007, 9, 16) },
     { name: "Dart", released: new Date(2011, 10, 10) },
     { name: "Django", released: new Date(2005, 6, 15) },
