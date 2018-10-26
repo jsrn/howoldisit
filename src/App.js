@@ -77,7 +77,8 @@ class App extends Component {
         { name: "TypeScript", released: new Date(2012, 9, 1) },
         { name: "Vue", released: new Date(2014, 1, 1) },
         { name: "Windows 10", released: new Date(2015, 6, 29) },
-        { name: "WordPress", released: new Date(2003, 4, 27) }
+        { name: "WordPress", released: new Date(2003, 4, 27) },
+        { name: "Xamarin Forms", released: new Date(2014, 4, 28) }
       ]
     };
 
