@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import technologies from './technologies';
 import './App.css';
+import Icon from './icon';
 
 class App extends Component {
   constructor() {
@@ -35,6 +36,14 @@ class App extends Component {
     return Math.floor((new Date() - date) / (365 * 60 * 24 * 1000 * 60));
   }
 
+  icon(props) {
+    return (
+    <svg>
+      <use xlinkHref='#icons_android' />
+    </svg>
+  );
+}
+
   render() {
     let rows = [];
     let options = [];
@@ -42,7 +51,8 @@ class App extends Component {
     for (let i = 0; i < this.state.technologies.length; i++) {
       rows.push(
         <p key={this.state.technologies[i].name} style={this.rowStyle(this.state.technologies[i].name)}>
-          <strong>{this.state.technologies[i].name}</strong> has been out for <strong>{this.daysSince(this.state.technologies[i].released)} years</strong>
+          <Icon icon={this.state.technologies[i].icon} />
+          <strong>{this.state.technologies[i].name}</strong> has been out for <strong>{years === 0 ? 'less than a year' : `${years} year${years === 1 ? '' : 's'}`}</strong>
         </p>
       );
 
