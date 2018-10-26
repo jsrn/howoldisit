@@ -77,6 +77,7 @@ const technologies = [
   { name: "Swift", released: new Date(2014, 5, 2) },
   { name: "Symfony 2", released: new Date(2011, 6, 0) },
   { name: "Tensorflow", released: new Date(2015, 11, 9) },
+  { name: "The World Wide Web", released: new Date(1990, 11, 25) },
   { name: "This project", released: new Date(2018, 9, 25) },
   { name: "TypeScript", released: new Date(2012, 9, 1) },
   { name: "Vue", released: new Date(2014, 1, 1) },
