@@ -43,7 +43,7 @@ class App extends Component {
       const years = this.daysSince(this.state.technologies[i].released);
       rows.push(
         <p key={this.state.technologies[i].name} style={this.rowStyle(this.state.technologies[i].name)}>
-          <strong>{this.state.technologies[i].name}</strong> has been out for <strong>{years} {years <= 1 ? 'year' : 'years'}</strong>
+          <strong>{this.state.technologies[i].name}</strong> has been out for <strong>{`${years} year${years <= 1 ? '' : 's'}`}</strong>
         </p>
       );
 
