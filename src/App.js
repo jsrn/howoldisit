@@ -42,7 +42,7 @@ class App extends Component {
     for (let i = 0; i < this.state.technologies.length; i++) {
       rows.push(
         <p key={this.state.technologies[i].name} style={this.rowStyle(this.state.technologies[i].name)}>
-          <strong>{this.state.technologies[i].name}</strong> has been out for <strong>{this.daysSince(this.state.technologies[i].released)} {this.daysSince(this.state.technologies[i].released) === 1 ? 'year' : 'years'}</strong>
+          <strong>{this.state.technologies[i].name}</strong> has been out for <strong>{this.daysSince(this.state.technologies[i].released)} year{this.daysSince(this.state.technologies[i].released) === 1 ? '' : 's'}</strong>
         </p>
       );
 
