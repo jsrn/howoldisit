@@ -26,7 +26,7 @@ const technologies = [
   { name: "Elixir", released: new Date(2011, 0, 1) },
   { name: "Elm", released: new Date(2012, 3, 1) },
   { name: "Ember.js", released: new Date(2011, 11, 8) },
-  { name: "Erlang", released: new Date(1998, 11, 8) },
+  { name: "Erlang", released: new Date(1986, 0, 1) },
   { name: "Flask", released: new Date(2010, 3, 1) },
   { name: "Flutter", released: new Date(2017, 5, 12) },
   { name: "Fortran", released: new Date(1956, 9, 15) },
