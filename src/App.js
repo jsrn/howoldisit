@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import technologies from './technologies';
 import './App.css';
+var pluralize = require('pluralize');
 
 class App extends Component {
   constructor() {
@@ -42,7 +43,7 @@ class App extends Component {
     for (let i = 0; i < this.state.technologies.length; i++) {
       rows.push(
         <p key={this.state.technologies[i].name} style={this.rowStyle(this.state.technologies[i].name)}>
-          <strong>{this.state.technologies[i].name}</strong> has been out for <strong>{this.daysSince(this.state.technologies[i].released)} years</strong>
+          <strong>{this.state.technologies[i].name}</strong> has been out for <strong>{this.daysSince(this.state.technologies[i].released)} {pluralize('years', this.daysSince(this.state.technologies[i].released))}</strong>
         </p>
       );
 
