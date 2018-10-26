@@ -10,13 +10,15 @@ class App extends Component {
       technologies: [
         // Please maintain alphabetical order when you add a technology :)
         // Remember that months are zero-indexed in javascript date objects
+        { name: "Ada", released: new Date(1980, 0, 1) },
         { name: "Angular", released: new Date(2016, 8, 14) },
         { name: "AngularJS", released: new Date(2010, 9, 20) },
-        { name: "BackBoneJS", released: new Date(2010, 9, 13) },
         { name: "Babbage Assembly", released: new Date(1971, 0, 1) },
+        { name: "BackBoneJS", released: new Date(2010, 9, 13) },
         { name: "Bash", released: new Date(1989, 5, 8) },
         { name: "BASIC", released: new Date(1964, 4, 1) },
         { name: "Bootstrap 4", released: new Date(2018, 0, 18) },
+        { name: "C", released: new Date(1972, 0, 1) },
         { name: "C++", released: new Date(1985, 9, 1) },
         { name: "C#", released: new Date(2001, 11, 1) },
         { name: "CakePHP", released: new Date(2005, 3, 1) },
@@ -28,8 +30,8 @@ class App extends Component {
         { name: "Flask", released: new Date(2010, 3, 1) },
         { name: "Fortran", released: new Date(1956, 9, 15) },
         { name: "Gensim", released: new Date(2009, 7, 31) },
-        { name: "GraphQL", released: new Date(2015, 6, 2) },
         { name: "Go", released: new Date(2009, 9, 10) },
+        { name: "GraphQL", released: new Date(2015, 6, 2) },
         { name: "Haskell", released: new Date(1990, 0, 1) },
         { name: "HTML", released: new Date(1993, 5, 1) },
         { name: "Java", released: new Date(1996, 9, 10) },
@@ -47,12 +49,12 @@ class App extends Component {
         { name: "PyTorch", released: new Date(2016, 7, 26) },
         { name: "React", released: new Date(2013, 4, 29) },
         { name: "React Native", released: new Date(2016, 2, 24) },
-        { name: "Ruby on Rails", released: new Date(2005, 11, 21) },
         { name: "Ruby", released: new Date(1995, 11, 21) },
+        { name: "Ruby on Rails", released: new Date(2005, 11, 21) },
         { name: "Rust", released: new Date(2015, 5, 5) },
         { name: "Sass", released: new Date(2006, 10, 28) },
+        { name: "Scala", released: new Date(2004, 1, 20) },
         { name: "scikit-learn", released: new Date(2007, 5, 1) },
-        { name: "Scala", released: new Date(2004, 1, 20) },        
         { name: "Swift", released: new Date(2014, 5, 2) },
         { name: "Symfony 2", released: new Date(2011, 6, 0) },
         { name: "Tensorflow", released: new Date(2015, 11, 9) },
@@ -90,7 +92,7 @@ class App extends Component {
 
   render() {
     let rows = [];
-    let options = []
+    let options = [];
 
     for (let i = 0; i < this.state.technologies.length; i++) {
       rows.push(
