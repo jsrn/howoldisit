@@ -43,6 +43,7 @@ class App extends Component {
         { name: "Laravel", released: new Date(2011, 8, 9) },
         { name: "Node.js", released: new Date(2009, 4, 27) },
         { name: "Numpy", released: new Date(2006, 7, 26) },
+        { name: "Perl", released: new Date(1987, 12, 18) },
         { name: "PHP", released: new Date(1995, 5, 8) },
         { name: "Python 1", released: new Date(1991, 1, 20) },
         { name: "Python 2", released: new Date(2000, 10, 16) },
