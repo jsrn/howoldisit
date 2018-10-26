@@ -30,6 +30,7 @@ const technologies = [
   { name: "Flask", released: new Date(2010, 3, 1) },
   { name: "Flutter", released: new Date(2017, 5, 12) },
   { name: "Fortran", released: new Date(1956, 9, 15) },
+  { name: "Gatsby", released: new Date(2017, 7, 6)},
   { name: "Gensim", released: new Date(2009, 7, 31) },
   { name: "Go", released: new Date(2009, 9, 10) },
   { name: "GraphQL", released: new Date(2015, 6, 2) },
