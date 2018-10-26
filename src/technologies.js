@@ -31,7 +31,7 @@
     { name: "Go", released: new Date(2009, 9, 10) },
     { name: "GraphQL", released: new Date(2015, 6, 2) },
     { name: "Haskell", released: new Date(1990, 0, 1) },
-    { name: "Haxe", released: new Date(2005, 0, 1) },
+    { name: "Hyper-V", released: new Date(2008, 5, 26) },
     { name: "HTML", released: new Date(1993, 5, 1) },
     { name: "Java", released: new Date(1996, 9, 10) },
     { name: "JavaScript", released: new Date(1995, 11, 4) },
