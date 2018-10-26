@@ -47,6 +47,7 @@
     { name: "Lua", released: new Date(1993, 6, 28) },
     { name: "Maven", released: new Date(2004, 7, 13) },
     { name: "MS-DOS", released: new Date(1981, 7, 12) },
+    { name: "MySQL", released: new Date(1995, 4, 23) },
     { name: "Node.js", released: new Date(2009, 4, 27) },
     { name: "Numpy", released: new Date(2006, 7, 26) },
     { name: "Perl", released: new Date(1987, 12, 18) },
