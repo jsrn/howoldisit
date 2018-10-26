@@ -23,6 +23,7 @@ class App extends Component {
         { name: "C#", released: new Date(2001, 11, 1) },
         { name: "CakePHP", released: new Date(2005, 3, 1) },
         { name: "Django", released: new Date(2005, 6, 15) },
+        { name: "Docker", released: new Date(2013, 2, 13) },
         { name: "Drupal", released: new Date(2000, 4, 18) },
         { name: "Elixir", released: new Date(2011, 0, 1) },
         { name: "Ember.js", released: new Date(2011, 11, 8) },
