@@ -36,14 +36,6 @@ class App extends Component {
     return Math.floor((new Date() - date) / (365 * 60 * 24 * 1000 * 60));
   }
 
-  icon(props) {
-    return (
-    <svg>
-      <use xlinkHref='#icons_android' />
-    </svg>
-  );
-}
-
   render() {
     let rows = [];
     let options = [];
