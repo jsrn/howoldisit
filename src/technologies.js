@@ -103,7 +103,9 @@ const technologies = [
   { name: "Vulkan", released: new Date(2016, 1, 16) },
   { name: "Windows 10", released: new Date(2015, 6, 29), icon: "windows" },
   { name: "WordPress", released: new Date(2003, 4, 27), icon: "wordpress" },
+  { name: "WPF", released: new Date(2006, 11, 21) },
   { name: "Xamarin Forms", released: new Date(2014, 4, 28) },
+  { name: "XAML", released: new Date(2008, 6, 1) },
   { name: "XML", released: new Date(1998,1,10), icon: "xml" },
   { name: "Yaml", released: new Date(2001, 5, 11) },
 ];
