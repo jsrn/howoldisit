@@ -1,5 +1,5 @@
 const technologies = [
-  // Please maintain alphabetical order when you add a technology :)
+  // Please maintain alphabetical order when you add a technology(validate with "npm test") :)
   // Remember that months are zero-indexed in javascript date objects
   { name: "Ada", released: new Date(1980, 0, 1) },
   { name: "Airflow (Apache)", released: new Date(2017, 3, 19) },
