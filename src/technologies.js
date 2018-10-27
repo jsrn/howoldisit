@@ -78,6 +78,7 @@ const technologies = [
   { name: "Node.js", released: new Date(2009, 4, 27), icon: "nodeJs" },
   { name: "Numpy", released: new Date(2006, 7, 26) },
   { name: "Objective-C", released: new Date(1984, 0, 1) },
+  { name: "OCaml", released: new Date(1996, 0, 1) },
   { name: "OpenGL", released: new Date(1992, 5, 30) },
   { name: "pandas", released: new Date(2008, 1, 11) },
   { name: "Perl", released: new Date(1987, 12, 18) },
