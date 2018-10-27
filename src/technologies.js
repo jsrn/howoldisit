@@ -87,6 +87,7 @@ const technologies = [
   { name: "pandas", released: new Date(2008, 1, 11) },
   { name: "Perl", released: new Date(1987, 12, 18) },
   { name: "PHP", released: new Date(1995, 5, 8), icon: "php" },
+  { name: "Polymer", released: new Date(2015, 6, 2) },
   { name: "PostgreSQL", released: new Date(1996, 6, 8) },
   { name: "Preact", released: new Date(2015, 8, 11) },
   { name: "Prometheus", released: new Date(2012, 10, 24), icon: "prometheus" },
