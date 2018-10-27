@@ -1,6 +1,7 @@
 const technologies = [
   // Please maintain alphabetical order when you add a technology :)
   // Remember that months are zero-indexed in javascript date objects
+  { name: "ABAP", released: new Date(1983, 0, 1), icon: "abap" },
   { name: "Ada", released: new Date(1980, 0, 1) },
   { name: "Airflow (Apache)", released: new Date(2017, 3, 19) },
   { name: "Amazon Web Services", released: new Date(2004, 2, 15) },
@@ -46,6 +47,7 @@ const technologies = [
   { name: "GraphQL", released: new Date(2015, 6, 2), icon: "graphQL" },
   { name: "Groovy", released: new Date(2007, 0, 2), icon: "groovy"},
   { name: "Hadoop (Apache)", released: new Date(2011, 12, 10) },
+  { name: "HANA", released: new Date(2010, 5, 18), icon: "hana" },
   { name: "Haskell", released: new Date(1990, 0, 1), icon: "haskell" },
   { name: "Haxe", released: new Date(2005, 0, 1) },
   { name: "Hive (Apache)", released: new Date(2015, 9, 22) },
