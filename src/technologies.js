@@ -71,6 +71,7 @@ const technologies = [
   { name: "Numpy", released: new Date(2006, 7, 26) },
   { name: "Objective-C", released: new Date(1984, 0, 1) },
   { name: "OpenGL", released: new Date(1992, 5, 30) },
+  { name: "pandas", released: new Date(2008, 1, 11) },
   { name: "Perl", released: new Date(1987, 12, 18) },
   { name: "PHP", released: new Date(1995, 5, 8), icon: "php" },
   { name: "PostgreSQL", released: new Date(1996, 6, 8) },
