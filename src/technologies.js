@@ -71,6 +71,7 @@ const technologies = [
   { name: "Laravel 5", released: new Date(2015, 2, 4), icon: "laravel" },
   { name: "Lisp", released: new Date(1958, 7, 1) },
   { name: "Lua", released: new Date(1993, 6, 28), icon: "lua" },
+  { name: "Magento", released: new Date(2008, 3, 31) },
   { name: "Maven", released: new Date(2004, 7, 13) },
   { name: "Mesos (Apache)", released: new Date(2016, 7, 27) },
   { name: "Metal", released: new Date(2014, 5, 2) },
