@@ -37,6 +37,12 @@ main p {
   line-height: 1.6em;
 }
 
+.icon {
+  vertical-align: top;
+  margin: auto 0.3em;
+  height: 1.6em;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
