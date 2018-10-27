@@ -8,6 +8,7 @@ const technologies = [
   { name: "AngularJS", released: new Date(2010, 9, 20), icon: "angular" },
   { name: "Ansible", released: new Date(2012, 2, 20) },
   { name: "Apache Mesos", released: new Date(2016, 7, 27) },
+  { name: "Assembly", released: new Date(1949, 0, 1), icon: "asm" },
   { name: "Babbage Assembly", released: new Date(1971, 0, 1) },
   { name: "BackBoneJS", released: new Date(2010, 9, 13), icon: "backbone" },
   { name: "Bash", released: new Date(1989, 5, 8) },
