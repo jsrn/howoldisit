@@ -74,6 +74,7 @@ const technologies = [
   { name: "Maven", released: new Date(2004, 7, 13) },
   { name: "Mesos (Apache)", released: new Date(2016, 7, 27) },
   { name: "Metal", released: new Date(2014, 5, 2) },
+  { name: "MIPS", released: new Date(1985, 1, 1) },
   { name: "MongoDB", released: new Date(2009, 1, 11), icon: "mongoDB" },
   { name: "MS-DOS", released: new Date(1981, 7, 12) },
   { name: "MySQL", released: new Date(1995, 4, 23), icon: "mySQL" },
