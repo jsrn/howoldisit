@@ -37,6 +37,7 @@ const technologies = [
   { name: "Gatsby", released: new Date(2017, 7, 6), icon: "gatsby" },
   { name: "Gensim", released: new Date(2009, 7, 31) },
   { name: "Go", released: new Date(2009, 9, 10), icon: "go" },
+  { name: "Grafana", released: new Date(2013, 11, 11), icon: "grafana" },
   { name: "GraphQL", released: new Date(2015, 6, 2), icon: "graphQL" },
   { name: "Groovy", released: new Date(2007, 0, 2), icon: "groovy"},
   { name: "Haskell", released: new Date(1990, 0, 1), icon: "haskell" },
