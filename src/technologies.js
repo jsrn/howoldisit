@@ -20,6 +20,7 @@ const technologies = [
   { name: "C#", released: new Date(2001, 11, 1), icon: "cSharp" },
   { name: "C++", released: new Date(1985, 9, 1), icon: "cPlusPlus" },
   { name: "CakePHP", released: new Date(2005, 3, 1), icon: "cakePHP" },
+  { name: "COBOL", released: new Date(1959, 0, 1) },
   { name: "Clojure", released: new Date(2007, 9, 16) },
   { name: "CodeIgniter", released: new Date(2006, 2, 28), icon: "codeIgniter" },
   { name: "CouchDB", released: new Date(2005, 2, 1) },
