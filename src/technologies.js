@@ -45,6 +45,7 @@ const technologies = [
   { name: "jQuery", released: new Date(2006, 7, 26) },
   { name: "Karaf", released: new Date(2010, 7, 23) },
   { name: "Keras", released: new Date(2015, 3, 27) },
+  { name: "Knockout", released: new Date(2010, 7, 5) },
   { name: "Kotlin", released: new Date(2016, 1, 15) },
   { name: "Kubernetes", released: new Date(2014, 6, 7) },
   { name: "Laravel", released: new Date(2011, 8, 9) },
