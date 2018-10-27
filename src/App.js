@@ -9,6 +9,8 @@ class App extends Component {
 
     this.state = {
       filter: "",
+      sortBy: "tech",
+      orderDesc: true,
       technologies
     };
 
@@ -36,9 +38,29 @@ class App extends Component {
     return Math.floor((new Date() - date) / (365 * 60 * 24 * 1000 * 60));
   }
 
+  handleSort = (e) => {
+    if(this.state.sortBy === e.target.innerText.toLowerCase()){
+      this.setState({
+        orderDesc: !this.state.orderDesc
+      });
+    }else{
+      this.setState({
+        sortBy: e.target.innerText.toLowerCase(),
+        orderDesc: true
+      });
+    }
+    this.forceUpdate();
+  }
+
   render() {
     let rows = [];
     let options = [];
+
+    if(this.state.sortBy === 'tech'){
+      this.state.technologies.sort((a, b) => this.state.orderDesc ? a.name > b.name : a.name < b.name )
+    }else{
+      this.state.technologies.sort((a, b) => this.state.orderDesc ? a.released > b.released : a.released < b.released )
+    }
 
     for (let i = 0; i < this.state.technologies.length; i++) {
       let years = this.yearsSince(this.state.technologies[i].released)
@@ -64,7 +86,8 @@ class App extends Component {
 
         <main>
           <p>This is a handy tool for tech recruiters who ask for fifteen years experience in technologies that have only existed for three months.</p>
-
+          
+          <p>Order by <a href="/#" onClick={this.handleSort}>Tech</a>, <a href="/#" onClick={this.handleSort}>Age</a></p>
           {rows}
 
           <p>Missing a technology? Find this repo on <a href="https://github.com/jsrn/howoldisit">GitHub</a>. Want a piece of me? Hurl abuse on <a href="https://twitter.com/jsrndoftime">Twitter</a>.</p>
