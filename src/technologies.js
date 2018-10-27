@@ -50,6 +50,7 @@ const technologies = [
   { name: "Laravel", released: new Date(2011, 8, 9) },
   { name: "Laravel 4", released: new Date(2013, 5, 28) },
   { name: "Laravel 5", released: new Date(2015, 2, 4) },
+  { name: "Lisp", released: new Date(1958, 7, 1) },
   { name: "Lua", released: new Date(1993, 6, 28) },
   { name: "Maven", released: new Date(2004, 7, 13) },
   { name: "Metal", released: new Date(2014, 5, 2) },
