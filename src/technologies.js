@@ -40,6 +40,7 @@ const technologies = [
   { name: "HTML", released: new Date(1993, 5, 1) },
   { name: "Hugo", released: new Date(2013, 5, 5) },
   { name: "Hyper-V", released: new Date(2008, 5, 26) },
+  { name: "IBM Notes", released: new Date(1989, 11, 7) },
   { name: "Java", released: new Date(1996, 9, 10) },
   { name: "JavaScript", released: new Date(1995, 11, 4) },
   { name: "Jekyll", released: new Date(2008, 10, 17) },
