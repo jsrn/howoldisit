@@ -24,6 +24,15 @@
 .App-header input {
   font-size: 1em;
   max-width: 90vw;
+  -webkit-appearance: none;
+  background: #282c34;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.App-header input:focus {
+  outline: none;
 }
 
 main {
@@ -35,6 +44,12 @@ main {
 
 main p {
   line-height: 1.6em;
+}
+
+.icon {
+  vertical-align: top;
+  margin: auto 0.3em;
+  height: 1.6em;
 }
 
 @keyframes App-logo-spin {

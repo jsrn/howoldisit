@@ -1,0 +1,1 @@
+If you would like to work on a particular issue, please say so in the issue itself so we don't end up with duplicate work. It is a shame to work on something only to be told that somebody beat you to the punch!

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import technologies from './technologies';
 import './App.css';
+import Icon from './icon';
 
 class App extends Component {
   constructor() {
@@ -7,42 +9,7 @@ class App extends Component {
 
     this.state = {
       filter: "",
-      technologies: [
-        // Please maintain alphabetical order when you add a technology :)
-        // Remember that months are zero-indexed in javascript date objects
-        { name: "Angular", released: new Date(2016, 8, 14) },
-        { name: "AngularJS", released: new Date(2010, 9, 20) },
-        { name: "Babbage Assembly", released: new Date(1971, 0, 1) },
-        { name: "Bash", released: new Date(1989, 5, 8) },
-        { name: "BASIC", released: new Date(1964, 4, 1) },
-        { name: "Bootstrap 4", released: new Date(2018, 0, 18) },
-        { name: "CakePHP", released: new Date(2005, 3, 1) },
-        { name: "Django", released: new Date(2005, 6, 15) },
-        { name: "Drupal", released: new Date(2000, 4, 18) },
-        { name: "Elixir", released: new Date(2011, 0, 1) },
-        { name: "Ember.js", released: new Date(2011, 11, 8) },
-        { name: "Flask", released: new Date(2010, 3, 1) },
-        { name: "Go", released: new Date(2009, 9, 10) },
-        { name: "Java", released: new Date(1996, 9, 10) },
-        { name: "Javascript", released: new Date(1995, 11, 4) },
-        { name: "jQuery", released: new Date(2006, 7, 26) },
-        { name: "Kotlin", released: new Date(2016, 1, 15) },
-        { name: "Laravel", released: new Date(2011, 8, 9) },
-        { name: "Node.js", released: new Date(2009, 4, 27) },
-        { name: "PHP", released: new Date(1995, 5, 8) },
-        { name: "Python 2", released: new Date(1991, 1, 20) },
-        { name: "Python 3", released: new Date(2008, 11, 3) },
-        { name: "React", released: new Date(2013, 4, 29) },
-        { name: "Ruby on Rails", released: new Date(2005, 11, 21) },
-        { name: "Ruby", released: new Date(1995, 11, 21) },
-        { name: "Sass", released: new Date(2006, 10, 28) },
-        { name: "Swift", released: new Date(2014, 5, 2) },
-        { name: "This project", released: new Date(2018, 9, 25) },
-        { name: "TypeScript", released: new Date(2012, 9, 1) },
-        { name: "Vue", released: new Date(2014, 1, 1) },
-        { name: "Windows 10", released: new Date(2015, 6, 29) },
-        { name: "WordPress", released: new Date(2003, 4, 27) }
-      ]
+      technologies
     };
 
     this.filterChanged = this.filterChanged.bind(this);
@@ -65,18 +32,20 @@ class App extends Component {
     return style;
   }
 
-  daysSince(date) {
+  yearsSince(date) {
     return Math.floor((new Date() - date) / (365 * 60 * 24 * 1000 * 60));
   }
 
   render() {
     let rows = [];
-    let options = []
+    let options = [];
 
     for (let i = 0; i < this.state.technologies.length; i++) {
+      let years = this.yearsSince(this.state.technologies[i].released)
       rows.push(
         <p key={this.state.technologies[i].name} style={this.rowStyle(this.state.technologies[i].name)}>
-          <strong>{this.state.technologies[i].name}</strong> has been out for <strong>{this.daysSince(this.state.technologies[i].released)} years</strong>
+          <Icon icon={this.state.technologies[i].icon} />
+          <strong>{this.state.technologies[i].name}</strong> has been out for <strong>{years < 1 ? 'less than a' : years} year{years > 1 ? 's' : ''}</strong>
         </p>
       );
 
