@@ -38,6 +38,7 @@ const technologies = [
   { name: "Gensim", released: new Date(2009, 7, 31) },
   { name: "Go", released: new Date(2009, 9, 10), icon: "go" },
   { name: "GraphQL", released: new Date(2015, 6, 2), icon: "graphQL" },
+  { name: "Groovy", released: new Date(2007, 0, 2) },
   { name: "Haskell", released: new Date(1990, 0, 1), icon: "haskell" },
   { name: "Haxe", released: new Date(2005, 0, 1) },
   { name: "HTML", released: new Date(1993, 5, 1), icon: "html" },
@@ -87,6 +88,7 @@ const technologies = [
   { name: "Scala", released: new Date(2004, 1, 20) },
   { name: "Scheme", released: new Date(1975, 11, 1) },
   { name: "scikit-learn", released: new Date(2007, 5, 1) },
+  { name: "Smalltalk", released: new Date(1980, 0, 1)},
   { name: "Spring", released: new Date(2002, 9, 1) },
   { name: "Swift", released: new Date(2014, 5, 2), icon: "swift" },
   { name: "Symfony 2", released: new Date(2011, 6, 0), icon: "symfony" },
@@ -100,6 +102,7 @@ const technologies = [
   { name: "Windows 10", released: new Date(2015, 6, 29), icon: "windows" },
   { name: "WordPress", released: new Date(2003, 4, 27), icon: "wordpress" },
   { name: "Xamarin Forms", released: new Date(2014, 4, 28) },
+  { name: "XML", released: new Date(1998,1,10), icon: "html" },
   { name: "Yaml", released: new Date(2001, 5, 11) },
 ];
 
