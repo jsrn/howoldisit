@@ -2,6 +2,7 @@ const technologies = [
   // Please maintain alphabetical order when you add a technology :)
   // Remember that months are zero-indexed in javascript date objects
   { name: "Ada", released: new Date(1980, 0, 1) },
+  { name: "Amazon Web Services", released: new Date(2004, 2, 15) },
   { name: "Android", released: new Date(2008, 8, 23) },
   { name: "Angular", released: new Date(2016, 8, 14) },
   { name: "AngularJS", released: new Date(2010, 9, 20) },
