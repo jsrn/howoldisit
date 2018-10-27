@@ -21,6 +21,7 @@ const technologies = [
   { name: "C++", released: new Date("1985-10-01"), icon: "cPlusPlus" },
   { name: "CakePHP", released: new Date("2005-04-01"), icon: "cakePHP" },
   { name: "Clojure", released: new Date("2007-10-16") },
+  { name: "COBOL", released: new Date("1959-01-01") },
   { name: "CodeIgniter", released: new Date("2006-03-28"), icon: "codeIgniter" },
   { name: "CouchDB", released: new Date("2005-03-01") },
   { name: "Crystal", released: new Date("2014-07-18") },
@@ -73,6 +74,7 @@ const technologies = [
   { name: "Laravel 5", released: new Date("2015-03-04"), icon: "laravel" },
   { name: "Lisp", released: new Date("1958-08-01") },
   { name: "Lua", released: new Date("1993-07-28"), icon: "lua" },
+  { name: "Magento", released: new Date("2008-04-31") },
   { name: "Maven", released: new Date("2004-08-13") },
   { name: "Mesos (Apache)", released: new Date("2016-08-27") },
   { name: "Metal", released: new Date("2014-06-02") },
@@ -102,6 +104,7 @@ const technologies = [
   { name: "React", released: new Date("2013-05-29"), icon: "react" },
   { name: "React Native", released: new Date("2016-03-24"), icon: "react" },
   { name: "Redis", released: new Date("2009-06-10") },
+  { name: "Redux", released: new Date("2015-06-02") },
   { name: "Rollup", released: new Date("2015-05-15") },
   { name: "Ruby", released: new Date("1995-12-21"), icon:"ruby" },
   { name: "Ruby on Rails", released: new Date("2005-12-21"), icon:"rails" },
@@ -129,7 +132,7 @@ const technologies = [
   { name: "Xamarin Forms", released: new Date("2014-05-28") },
   { name: "XAML", released: new Date("2008-07-01") },
   { name: "XML", released: new Date("1998-02-10"), icon: "xml" },
-  { name: "Yaml", released: new Date("2001-06-11") },
+  { name: "Yaml", released: new Date("2001-06-11") }
 ];
 
 export default technologies;
