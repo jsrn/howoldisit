@@ -1,5 +1,5 @@
 const technologies = [
-  // Please maintain alphabetical order when you add a technology :)
+  // Please maintain alphabetical order when you add a technology(validate with "npm test") :)
   // Date format is YYYY-MM-DD
   { name: "ABAP", released: new Date("1983-01-01"), icon: "abap", link: "https://en.wikipedia.org/wiki/ABAP" },
   { name: "Ada", released: new Date("1980-01-01"), link: "https://en.wikipedia.org/wiki/Ada_(programming_language)" },
