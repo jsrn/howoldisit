@@ -25,7 +25,7 @@ const technologies = [
   { name: "Clojure", released: new Date("2007-10-16") },
   { name: "COBOL", released: new Date("1959-01-01") },
   { name: "CodeIgniter", released: new Date("2006-03-28"), icon: "codeIgniter" },
-  { name: "Concourse", released: new Date("2014-01-01"), icon: "concourseci" },
+  { name: "Concourse", released: new Date("2014-04-19"), icon: "concourseci" },
   { name: "CouchDB", released: new Date("2005-03-01") },
   { name: "Crystal", released: new Date("2014-07-18") },
   { name: "CSS", released: new Date("1996-12-17"), icon: "css" },
