@@ -10,7 +10,7 @@ class App extends Component {
     this.state = {
       filter: "",
       sortBy: "tech",
-      orderDesc: true,
+      orderDesc: false,
       technologies
     };
 
@@ -39,29 +39,65 @@ class App extends Component {
   }
 
   handleSort = (e) => {
-    if(this.state.sortBy === e.target.innerText.toLowerCase()){
-      this.setState({
-        orderDesc: !this.state.orderDesc
-      });
+    let sortBy = this.state.sortBy;
+    let newSort = e.target.innerText.toLowerCase();
+    let orderDesc = this.state.orderDesc;
+  
+    if(sortBy === newSort){
+        orderDesc = !orderDesc;
     }else{
-      this.setState({
-        sortBy: e.target.innerText.toLowerCase(),
-        orderDesc: true
-      });
+      sortBy = newSort;
+      orderDesc = false;      
     }
-    this.forceUpdate();
+    
+    this.setState({
+      orderDesc: orderDesc,
+      sortBy: sortBy
+    }, () => this.orderTechnologies());
   }
 
-  render() {
-    let rows = [];
-    let options = [];
+  orderTechnologies(){
+    let techList = Object.assign([], this.state.technologies);
 
     if(this.state.sortBy === 'tech'){
-      this.state.technologies.sort((a, b) => this.state.orderDesc ? a.name > b.name : a.name < b.name )
+      techList.sort((a, b) => this.state.orderDesc ? a.name < b.name : a.name > b.name )
     }else{
-      this.state.technologies.sort((a, b) => this.state.orderDesc ? a.released > b.released : a.released < b.released )
+      techList.sort((a, b) => this.state.orderDesc ? a.released > b.released : a.released < b.released )
     }
 
+    this.setState({
+      technologies: techList
+    });
+  }
+
+
+  render() {
+    function SortOrderTechAsc(props) {
+      return (
+        <div className="inline"><p className="inline">Order by</p> <strong onClick={props.onClick}>Tech</strong><div className="arrow-up"></div>, <div className="inline" onClick={props.onClick}>Age</div></div>
+      );
+    }
+    function SortOrderTechDesc(props) {
+      return (
+        <div className="inline"><p className="inline">Order by</p> <strong onClick={props.onClick}>Tech</strong><div className="arrow-down"></div>, <div className="inline" onClick={props.onClick}>Age</div></div>
+      );
+    }
+  
+    function SortOrderAgeAsc(props) {
+      return (
+        <div className="inline"><p className="inline">Order by</p> <div className="inline" onClick={props.onClick}>Tech</div>, <strong onClick={props.onClick}>Age</strong><div className="arrow-up"></div></div>
+      );
+    }
+    function SortOrderAgeDesc(props) {
+      return (
+        <div className="inline"><p className="inline">Order by</p> <div className="inline" onClick={props.onClick}>Tech</div>, <strong onClick={props.onClick}>Age</strong><div className="arrow-down"></div></div>
+      );
+    }
+
+    let rows = [];
+    let options = [];
+    let sortOrder = {};
+   
     for (let i = 0; i < this.state.technologies.length; i++) {
       let years = this.yearsSince(this.state.technologies[i].released)
       rows.push(
@@ -75,6 +111,16 @@ class App extends Component {
         <option key={this.state.technologies[i].name} value={this.state.technologies[i].name} />
       )
     }
+
+    sortOrder = <SortOrderTechAsc onClick={this.handleSort} />;
+    if(this.state.sortBy !== 'tech' && !this.state.orderDesc){
+      sortOrder = <SortOrderAgeAsc onClick={this.handleSort} />;
+    }else if(this.state.sortBy !== 'tech' && this.state.orderDesc){
+      sortOrder = <SortOrderAgeDesc onClick={this.handleSort} />;
+    }else if(this.state.sortBy === 'tech' && this.state.orderDesc){
+      sortOrder = <SortOrderTechDesc onClick={this.handleSort} />;
+    }
+
     return (
       <div className="App">
         <header className="App-header">
@@ -86,8 +132,7 @@ class App extends Component {
 
         <main>
           <p>This is a handy tool for tech recruiters who ask for fifteen years experience in technologies that have only existed for three months.</p>
-          
-          <p>Order by <a href="/#" onClick={this.handleSort}>Tech</a>, <a href="/#" onClick={this.handleSort}>Age</a></p>
+          {sortOrder}
           {rows}
 
           <p>Missing a technology? Find this repo on <a href="https://github.com/jsrn/howoldisit">GitHub</a>. Want a piece of me? Hurl abuse on <a href="https://twitter.com/jsrndoftime">Twitter</a>.</p>
