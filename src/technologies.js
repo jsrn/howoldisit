@@ -36,7 +36,7 @@ const technologies = [
   { name: "Docker", released: new Date("2013-03-13"), icon: "docker", link: "https://www.docker.com/" },
   { name: "Drupal", released: new Date("2000-05-18"), icon: "drupal", link: "https://www.drupal.org/" },
   { name: "D3", released: new Date("2010-09-27"), link: "https://d3js.org/" },
-  { name: "Electron", released: new Date("2013-04-12"), link: "https://electronjs.org/" },
+  { name: "Electron", released: new Date("2013-04-12"), icon: "electron", link: "https://electronjs.org/" },
   { name: "Elixir", released: new Date("2011-01-01"), link: "https://elixir-lang.org/" },
   { name: "Elm", released: new Date("2012-04-01"), link: "https://elm-lang.org/" },
   { name: "Ember.js", released: new Date("2011-12-08"), link: "https://www.emberjs.com/" },
