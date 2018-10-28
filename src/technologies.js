@@ -16,6 +16,7 @@ const technologies = [
   { name: "Bash", released: new Date("1989-06-08") },
   { name: "BASIC", released: new Date("1964-05-01") },
   { name: "Bootstrap 4", released: new Date("2018-01-18"), icon: "bootstrap" },
+  { name: "Brainfuck", released: new Date("1993-09-01") },
   { name: "C", released: new Date("1972-01-01"), icon: "c" },
   { name: "C#", released: new Date("2001-12-01"), icon: "cSharp" },
   { name: "C++", released: new Date("1985-10-01"), icon: "cPlusPlus" },
