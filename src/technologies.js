@@ -70,7 +70,7 @@ const technologies = [
   { name: "jssm", released: new Date("2017-05-03") },
   { name: "Julia", released: new Date("2012-01-01"), link: "https://julialang.org/" },
   { name: "Kafka (Apache)", released: new Date("2011-08-15"), icon: "kafka", link: "https://kafka.apache.org/" },
-  { name: "Karaf", released: new Date("2010-08-23") },
+  { name: "Karaf", released: new Date("2010-08-23"), link: "https://karaf.apache.org/" },
   { name: "Keras", released: new Date("2015-04-27"), link: "https://keras.io/" },
   { name: "Knockout", released: new Date("2010-08-05"), link: "https://knockoutjs.com/" },
   { name: "Kotlin", released: new Date("2016-02-15"), link: "https://kotlinlang.org/" },
