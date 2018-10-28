@@ -56,6 +56,10 @@ main p {
   display:inline;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .arrow-up {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;  
