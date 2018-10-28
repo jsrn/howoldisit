@@ -106,7 +106,7 @@ const technologies = [
   { name: "Ramda", released: new Date("2013-05-29"), icon: "react" },
   { name: "React", released: new Date("2013-05-29"), icon: "react" },
   { name: "React Native", released: new Date("2016-03-24"), icon: "react" },
-  { name: "Redis", released: new Date("2009-06-10") },
+  { name: "Redis", released: new Date("2009-06-10"), icon: "redis" },
   { name: "Redux", released: new Date("2015-06-02") },
   { name: "Rollup", released: new Date("2015-05-15") },
   { name: "Ruby", released: new Date("1995-12-21"), icon:"ruby" },
