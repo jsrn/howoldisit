@@ -90,6 +90,7 @@ const technologies = [
   { name: "MongoDB", released: new Date("2009-02-11"), icon: "mongoDB", link: "https://www.mongodb.com/" },
   { name: "MS-DOS", released: new Date("1981-08-12"), link: "https://en.wikipedia.org/wiki/MS-DOS" },
   { name: "MySQL", released: new Date("1995-05-23"), icon: "mySQL", link: "https://www.mysql.com/" },
+  { name: "Nginx", released: new Date("2004-10-04"), link: "https://www.nginx.com/" },
   { name: "Node.js", released: new Date("2009-05-27"), icon: "nodeJs", link: "https://nodejs.org/" },
   { name: "Numpy", released: new Date("2006-08-26"), link: "http://www.numpy.org/" },
   { name: "Objective-C", released: new Date("1984-01-01"), link: "https://en.wikipedia.org/wiki/Objective-C" },
