@@ -78,6 +78,7 @@ const technologies = [
   { name: "Laravel", released: new Date("2011-09-09"), icon: "laravel" },
   { name: "Laravel 4", released: new Date("2013-06-28"), icon: "laravel" },
   { name: "Laravel 5", released: new Date("2015-03-04"), icon: "laravel" },
+  { name: "LaTeX", released: new Date("1983-01-01") },
   { name: "Linux", released: new Date("1991-08-25") },
   { name: "Lisp", released: new Date("1958-08-01") },
   { name: "Lua", released: new Date("1993-07-28"), icon: "lua" },
