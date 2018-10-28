@@ -64,6 +64,7 @@ const technologies = [
   { name: "Jekyll", released: new Date("2008-11-17"), icon: "jekyll" },
   { name: "jQuery", released: new Date("2006-08-26"), icon: "jquery" },
   { name: "jssm", released: new Date("2017-05-03") },
+  { name: "Julia", released: new Date("2012-01-01") },
   { name: "Kafka (Apache)", released: new Date("2011-08-15"), icon: "kafka" },
   { name: "Karaf", released: new Date("2010-08-23") },
   { name: "Keras", released: new Date("2015-04-27") },
