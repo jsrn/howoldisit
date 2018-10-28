@@ -3,6 +3,7 @@ const technologies = [
   // Date format is YYYY-MM-DD
   { name: "ABAP", released: new Date("1983-01-01"), icon: "abap" },
   { name: "Ada", released: new Date("1980-01-01") },
+  { name: "AdonisJs", released: new Date("2015-08-15") },
   { name: "Airflow (Apache)", released: new Date("2017-04-19") },
   { name: "Amazon Web Services", released: new Date("2004-03-15") },
   { name: "Android", released: new Date("2008-09-23"), icon: "android" },
