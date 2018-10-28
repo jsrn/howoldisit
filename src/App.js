@@ -44,8 +44,10 @@ class App extends Component {
       let years = this.yearsSince(this.state.technologies[i].released)
       rows.push(
         <p key={this.state.technologies[i].name} style={this.rowStyle(this.state.technologies[i].name)}>
-          <Icon icon={this.state.technologies[i].icon} />
-          <strong>{this.state.technologies[i].name}</strong> has been out for <strong>{years < 1 ? 'less than a' : years} year{years > 1 ? 's' : ''}</strong>
+          <a target={this.state.technologies[i].link ? "_blank": ""} rel='noopener noreferrer' href={this.state.technologies[i].link ? this.state.technologies[i].link: '#'}>
+            <Icon icon={this.state.technologies[i].icon} />
+            <strong>{this.state.technologies[i].name}</strong>
+          </a> has been out for <strong>{years < 1 ? 'less than a' : years} year{years > 1 ? 's' : ''}</strong>
         </p>
       );
 
