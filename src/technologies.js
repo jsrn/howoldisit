@@ -121,6 +121,7 @@ const technologies = [
   { name: "Scala", released: new Date("2004-02-20") },
   { name: "Scheme", released: new Date("1975-12-01") },
   { name: "scikit-learn", released: new Date("2007-06-01") },
+  { name: "Shiny", released: new Date("2012-11-12") },
   { name: "Smalltalk", released: new Date("1980-01-01")},
   { name: "Spark (Apache)", released: new Date("2014-06-26") },
   { name: "Spring", released: new Date("2002-10-01") },
