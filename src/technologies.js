@@ -36,7 +36,7 @@ const technologies = [
   { name: "Docker", released: new Date("2013-03-13"), icon: "docker" },
   { name: "Drupal", released: new Date("2000-05-18"), icon: "drupal" },
   { name: "D3", released: new Date("2010-09-27") },
-  { name: "Electron", released: new Date("2013-04-12") },
+  { name: "Electron", released: new Date("2013-04-12"), icon: "electron" },
   { name: "Elixir", released: new Date("2011-01-01") },
   { name: "Elm", released: new Date("2012-04-01") },
   { name: "Ember.js", released: new Date("2011-12-08") },
