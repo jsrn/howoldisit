@@ -63,6 +63,7 @@ const technologies = [
   { name: "Hugo", released: new Date("2013-06-05"), link: "https://gohugo.io/" },
   { name: "Hyper-V", released: new Date("2008-06-26"), link: "https://en.wikipedia.org/wiki/Hyper-V" },
   { name: "IBM Notes", released: new Date("1989-12-07"), link: "https://en.wikipedia.org/wiki/IBM_Notes" },
+  { name: "Ionic", released: new Date("2013-11-01"), link: "https://ionicframework.com/" },
   { name: "Java", released: new Date("1996-10-10"), icon: "java", link: "https://www.java.com/" },
   { name: "JavaScript", released: new Date("1995-12-04"), icon: "javaScript", link: "https://www.javascript.com/"},
   { name: "Jekyll", released: new Date("2008-11-17"), icon: "jekyll", link: "https://jekyllrb.com/" },
