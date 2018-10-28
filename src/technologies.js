@@ -1,5 +1,5 @@
 const technologies = [
-  // Please maintain alphabetical order when you add a technology :)
+  // Please maintain alphabetical order when you add a technology(validate with "npm test") :)
   // Date format is YYYY-MM-DD
   { name: "ABAP", released: new Date("1983-01-01"), icon: "abap", link: "https://en.wikipedia.org/wiki/ABAP" },
   { name: "Ada", released: new Date("1980-01-01"), link: "https://en.wikipedia.org/wiki/Ada_(programming_language)" },
@@ -30,12 +30,12 @@ const technologies = [
   { name: "CouchDB", released: new Date("2005-03-01"), link: "http://couchdb.apache.org/" },
   { name: "Crystal", released: new Date("2014-07-18"), link: "https://crystal-lang.org/" },
   { name: "CSS", released: new Date("1996-12-17"), icon: "css", link: "https://en.wikipedia.org/wiki/Cascading_Style_Sheets" },
+  { name: "D3", released: new Date("2010-09-27"), link: "https://d3js.org/" },
   { name: "Dart", released: new Date("2011-11-10"), link: "https://www.dartlang.org/" },
   { name: "Direct3D", released: new Date("1996-06-02"), link: "https://docs.microsoft.com/en-us/windows/desktop/direct3d" },
   { name: "Django", released: new Date("2005-07-15"), icon: "django", link: "https://www.djangoproject.com/" },
   { name: "Docker", released: new Date("2013-03-13"), icon: "docker", link: "https://www.docker.com/" },
   { name: "Drupal", released: new Date("2000-05-18"), icon: "drupal", link: "https://www.drupal.org/" },
-  { name: "D3", released: new Date("2010-09-27"), link: "https://d3js.org/" },
   { name: "Electron", released: new Date("2013-04-12"), icon: "electron", link: "https://electronjs.org/" },
   { name: "Elixir", released: new Date("2011-01-01"), link: "https://elixir-lang.org/" },
   { name: "Elm", released: new Date("2012-04-01"), link: "https://elm-lang.org/" },
