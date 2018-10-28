@@ -123,6 +123,7 @@ const technologies = [
   { name: "Spring", released: new Date("2002-10-01") },
   { name: "Swift", released: new Date("2014-06-02"), icon: "swift" },
   { name: "Symfony 2", released: new Date("2011-07-00"), icon: "symfony" },
+  { name: "SQLite", released: new Date("2000-08-17") },
   { name: "Tensorflow", released: new Date("2015-12-09") },
   { name: "Terraform", released: new Date("2014-08-28") },
   { name: "The World Wide Web", released: new Date("1990-12-25"), icon: "www" },
