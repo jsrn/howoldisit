@@ -1,6 +1,8 @@
 const technologies = [
   // Please maintain alphabetical order when you add a technology(validate with "npm test") :)
   // Date format is YYYY-MM-DD
+  { name: ".NET Framework", released: new Date("2002-2-13"), link: "https://www.microsoft.com/net" },
+  { name: ".NET Core", released: new Date("2016-6-27"), link: "https://www.microsoft.com/net" },
   { name: "ABAP", released: new Date("1983-01-01"), icon: "abap", link: "https://en.wikipedia.org/wiki/ABAP" },
   { name: "Ada", released: new Date("1980-01-01"), link: "https://en.wikipedia.org/wiki/Ada_(programming_language)" },
   { name: "AdonisJs", released: new Date("2015-08-15"), link: "https://adonisjs.com/" },
