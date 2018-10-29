@@ -88,6 +88,7 @@ const technologies = [
   { name: "Lodash", released: new Date("2012-04-23"), link: "https://lodash.com/" },
   { name: "Lua", released: new Date("1993-07-28"), icon: "lua", link: "https://www.lua.org/" },
   { name: "Magento", released: new Date("2008-03-31"), link: "https://magento.com/" },
+  { name: "Markdown", released: new Date("2004-03-19"), link: "https://daringfireball.net/projects/markdown/" },
   { name: "Maven", released: new Date("2004-08-13"), link: "https://maven.apache.org/" },
   { name: "Mesos (Apache)", released: new Date("2016-08-27"), link: "http://mesos.apache.org/" },
   { name: "Metal", released: new Date("2014-06-02"), link: "https://en.wikipedia.org/wiki/Metal_(API)" },
