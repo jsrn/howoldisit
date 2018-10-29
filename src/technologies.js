@@ -108,7 +108,7 @@ const technologies = [
   { name: "Python 2", released: new Date("2000-11-16"), icon: "python", link: "https://www.python.org/" },
   { name: "Python 3", released: new Date("2008-12-03"), icon: "python", link: "https://www.python.org/" },
   { name: "PyTorch", released: new Date("2016-08-26"), link: "https://pytorch.org/" },
-  { name: "R", released: new Date("1993-08-01"), links: "https://www.r-project.org/" },
+  { name: "R", released: new Date("1993-08-01"), icon: "r", links: "https://www.r-project.org/" },
   { name: "Ramda", released: new Date("2013-05-29"), icon: "react", link: "https://ramdajs.com/" },
   { name: "React", released: new Date("2013-05-29"), icon: "react", link: "https://reactjs.org/" },
   { name: "React Native", released: new Date("2016-03-24"), icon: "react", link: "https://facebook.github.io/react-native/" },
