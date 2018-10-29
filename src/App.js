@@ -32,6 +32,7 @@ class App extends Component {
         { name: "jQuery", released: new Date(2006, 7, 26) },
         { name: "Kotlin", released: new Date(2016, 1, 15) },
         { name: "Laravel", released: new Date(2011, 8, 9) },
+        { name: ".NET Framework", released: new Date(2002, 2, 13) },
         { name: ".NET Core", released: new Date(2016, 6, 27) },
         { name: "Node.js", released: new Date(2009, 4, 27) },
         { name: "Numpy", released: new Date(2006, 7, 26) },
