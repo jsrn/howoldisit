@@ -70,7 +70,7 @@ const technologies = [
   { name: "Java", released: new Date("1996-10-10"), icon: "java", link: "https://www.java.com/" },
   { name: "JavaScript", released: new Date("1995-12-04"), icon: "javaScript", link: "https://www.javascript.com/"},
   { name: "Jekyll", released: new Date("2008-11-17"), icon: "jekyll", link: "https://jekyllrb.com/" },
-  { name: "Jenkins", released: new Date("2011-02-03"), icon: "jenkins", link: "https://jenkins.io/" },
+  { name: "Jenkins (formerly Hudson)", released: new Date("2005-02-07"), icon: "jenkins", link: "https://jenkins.io/" },
   { name: "jQuery", released: new Date("2006-08-26"), icon: "jquery", link: "https://jquery.com/" },
   { name: "jssm", released: new Date("2017-05-03") },
   { name: "Julia", released: new Date("2012-01-01"), link: "https://julialang.org/" },
