@@ -57,7 +57,7 @@ class App extends Component {
   }
 
   orderTechnologies(){
-    let techList = Object.assign([], this.state.technologies);
+    let techList = JSON.parse(JSON.stringify(this.state.technologies));
     let orderDesc = this.state.orderDesc;
 
     if(this.state.sortBy === 'tech'){
