@@ -43,16 +43,9 @@ class App extends Component {
     let newSort = e.target.innerText.toLowerCase();
     let orderDesc = this.state.orderDesc;
   
-    if(sortBy === newSort){
-        orderDesc = !orderDesc;
-    }else{
-      sortBy = newSort;
-      orderDesc = false;      
-    }
-    
     this.setState({
-      orderDesc: orderDesc,
-      sortBy: sortBy
+      orderDesc: sortBy === newSort ? !orderDesc : false,
+      sortBy: newSort
     }, () => this.orderTechnologies());
   }
 
