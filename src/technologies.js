@@ -129,6 +129,7 @@ const technologies = [
   { name: "React Native", released: new Date("2016-03-24"), icon: "react", link: "https://facebook.github.io/react-native/" },
   { name: "Redis", released: new Date("2009-06-10"), icon: "redis", link: "https://redis.io/" },
   { name: "Redux", released: new Date("2015-06-02"), link: "https://redux.js.org/" },
+  { name: "Rexx", released: new Date("1979-03-20"), link: "http://rexxla.org/" },
   { name: "Rollup", released: new Date("2015-05-15"), link: "https://rollupjs.org/" },
   { name: "Ruby", released: new Date("1995-12-21"), icon:"ruby", link: "https://www.ruby-lang.org/" },
   { name: "Ruby on Rails", released: new Date("2005-12-21"), icon:"rails", link: "https://rubyonrails.org/" },
