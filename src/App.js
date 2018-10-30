@@ -64,26 +64,16 @@ class App extends Component {
       techList.sort((a, b) => {
         let aName = a.name.toLowerCase();
         let bName = b.name.toLowerCase();
-        if(orderDesc){ 
-          if(aName > bName) return -1;
-          if(aName < bName) return 1; 
-        }else{
-          if(aName < bName) return -1; 
-          if(aName > bName) return 1;
-        }
+        if (aName > bName) return orderDesc ? -1 : 1;
+        if (aName < bName) return orderDesc ? 1 : -1;
         return 0;
       });
     }else{
       techList.sort((a, b) => {
         let aRel = a.released;
         let bRel = b.released;
-        if(orderDesc){ 
-          if(aRel > bRel) return 1;
-          if(aRel < bRel) return -1; 
-        }else{
-          if(aRel < bRel) return 1; 
-          if(aRel > bRel) return -1;
-        }
+        if (aRel > bRel) return orderDesc ? 1 : -1;
+        if (aRel < bRel) return orderDesc ? -1 : 1;
         return 0;
       });
     }
