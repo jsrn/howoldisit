@@ -86,6 +86,7 @@ const technologies = [
   { name: "Linux", released: new Date("1991-08-25"), link: "https://www.linux.org/" },
   { name: "Lisp", released: new Date("1958-08-01"), link: "https://en.wikipedia.org/wiki/Lisp_(programming_language)" },
   { name: "Lodash", released: new Date("2012-04-23"), link: "https://lodash.com/" },
+  { name: "Logo", released: new Date("1967-01-01"), link: "http://el.media.mit.edu/logo-foundation/"},
   { name: "Lua", released: new Date("1993-07-28"), icon: "lua", link: "https://www.lua.org/" },
   { name: "Magento", released: new Date("2008-03-31"), link: "https://magento.com/" },
   { name: "Markdown", released: new Date("2004-03-19"), link: "https://daringfireball.net/projects/markdown/" },
