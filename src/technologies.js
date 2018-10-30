@@ -150,6 +150,7 @@ const technologies = [
   { name: "TOML", released: new Date("2013-01-23"), link: "https://github.com/toml-lang/toml" },
   { name: "TypeScript", released: new Date("2012-10-01"), icon: "typeScript", link: "https://www.typescriptlang.org/" },
   { name: "Underscore.js", released: new Date("2009-10-28"), link: "https://underscorejs.org/" },
+  { name: "Visual Basic 6", released: new Date("1998-06-01"), icon: "basic", link: "https://en.wikipedia.org/wiki/Visual_Basic" },
   { name: "Vue", released: new Date("2014-02-01"), icon: "vue", link: "https://vuejs.org/" },
   { name: "Vulkan", released: new Date("2016-02-16"), link: "https://www.khronos.org/vulkan/" },
   { name: "Webpack", released: new Date("2012-03-10"), link: "https://webpack.js.org/" },
