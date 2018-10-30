@@ -118,12 +118,12 @@ class App extends Component {
             <div className={this.state.sortBy === "tech" ? "inline bold" : "inline"} onClick={this.handleSort}>
               Tech
             </div>
-            {this.state.sortBy === "tech" && <div className={this.state.orderDesc ? "arrow-down" : "arrow-up"} />}
+            {this.state.sortBy === "tech" && <div className={this.state.orderDesc ? "arrow arrow-down" : "arrow arrow-up"} />}
             <p className="inline">, </p>           
             <div className={this.state.sortBy !== "tech" ? "inline bold" : "inline"} onClick={this.handleSort}>
               Age
             </div>
-            {this.state.sortBy !== "tech" && <div className={this.state.orderDesc ? "arrow-down" : "arrow-up"} />}
+            {this.state.sortBy !== "tech" && <div className={this.state.orderDesc ? "arrow arrow-down" : "arrow arrow-up"} />}
           </div>    
 
           {rows}
