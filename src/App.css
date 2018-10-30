@@ -60,24 +60,21 @@ main p {
   font-weight: bold;
 }
 
-.arrow-up {
+.arrow {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;  
-  border-bottom: 5px solid black;
   display: inline-block;
   margin-right: 5px;
   margin-left: 5px;
   margin-bottom: 5px;
 }
 
+.arrow-up {
+  border-bottom: 5px solid black;
+}
+
 .arrow-down {
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;  
   border-top: 5px solid black;
-  display: inline-block;
-  margin-right: 5px;
-  margin-left: 5px;
-  margin-bottom: 5px;
 }
 
 @keyframes App-logo-spin {
