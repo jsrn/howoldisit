@@ -58,18 +58,40 @@ class App extends Component {
 
   orderTechnologies(){
     let techList = Object.assign([], this.state.technologies);
+    let orderDesc = this.state.orderDesc;
 
     if(this.state.sortBy === 'tech'){
-      techList.sort((a, b) => this.state.orderDesc ? a.name.toLowerCase() < b.name.toLowerCase() : a.name.toLowerCase() > b.name.toLowerCase() )
+      techList.sort((a, b) => {
+        let aName = a.name.toLowerCase();
+        let bName = b.name.toLowerCase();
+        if(orderDesc){ 
+          if(aName > bName) return -1;
+          if(aName < bName) return 1; 
+        }else{
+          if(aName < bName) return -1; 
+          if(aName > bName) return 1;
+        }
+        return 0;
+      });
     }else{
-      techList.sort((a, b) => this.state.orderDesc ? a.released > b.released : a.released < b.released )
+      techList.sort((a, b) => {
+        let aRel = a.released;
+        let bRel = b.released;
+        if(orderDesc){ 
+          if(aRel > bRel) return 1;
+          if(aRel < bRel) return -1; 
+        }else{
+          if(aRel < bRel) return 1; 
+          if(aRel > bRel) return -1;
+        }
+        return 0;
+      });
     }
 
     this.setState({
       technologies: techList
     });
   }
-
 
   render() {
     let rows = [];
