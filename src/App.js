@@ -35,7 +35,7 @@ class App extends Component {
   }
 
   yearsSince(date) {
-    return Math.floor((new Date() - date) / (365 * 60 * 24 * 1000 * 60));
+    return Math.floor((new Date() - new Date(date)) / (365 * 60 * 24 * 1000 * 60));
   }
 
   handleSort = (e) => {
@@ -98,7 +98,7 @@ class App extends Component {
     let options = [];
    
     for (let i = 0; i < this.state.technologies.length; i++) {
-      let years = this.yearsSince(this.state.technologies[i].released)
+      let years = this.yearsSince(this.state.technologies[i].released);
       rows.push(
         <p key={this.state.technologies[i].name} style={this.rowStyle(this.state.technologies[i].name)}>
           <Icon icon={this.state.technologies[i].icon} />
