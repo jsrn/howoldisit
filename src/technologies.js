@@ -20,6 +20,7 @@ const technologies = [
   { name: "BASIC", released: new Date("1964-05-01"), link: "https://en.wikipedia.org/wiki/BASIC" },
   { name: "Bootstrap 4", released: new Date("2018-01-18"), icon: "bootstrap", link: "https://getbootstrap.com/" },
   { name: "Brainfuck", released: new Date("1993-09-01"), link: "https://en.wikipedia.org/wiki/Brainfuck" },
+  { name: "Bulma", released: new Date("2016-01-24"), link: "https://bulma.io/" },
   { name: "C", released: new Date("1972-01-01"), icon: "c", link: "https://en.wikipedia.org/wiki/C_(programming_language)" },
   { name: "C#", released: new Date("2001-12-01"), icon: "cSharp", link: "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" },
   { name: "C++", released: new Date("1985-10-01"), icon: "cPlusPlus", link: "http://www.cplusplus.com/" },
