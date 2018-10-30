@@ -102,6 +102,7 @@ const technologies = [
   { name: "React", released: new Date(2013, 4, 29), icon: "react" },
   { name: "React Native", released: new Date(2016, 2, 24), icon: "react" },
   { name: "Redis", released: new Date(2009, 5, 10) },
+  { name: "Rexx", released: new Date(1979, 3, 20) },
   { name: "Rollup", released: new Date(2015, 4, 15) },
   { name: "Ruby", released: new Date(1995, 11, 21), icon:"ruby" },
   { name: "Ruby on Rails", released: new Date(2005, 11, 21), icon:"rails" },
