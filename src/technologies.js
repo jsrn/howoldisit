@@ -133,6 +133,7 @@ const technologies = [
   { name: "Scala", released: new Date("2004-02-20"), link: "https://www.scala-lang.org/" },
   { name: "Scheme", released: new Date("1975-12-01"), link: "http://www.scheme-reports.org/" },
   { name: "scikit-learn", released: new Date("2007-06-01"), link: "http://scikit-learn.org/" },
+  { name: "Serverless Framework", released: new Date("2015-12-01"), link: "https://serverless.com/" },
   { name: "Shiny", released: new Date("2012-11-12"), links: "https://shiny.rstudio.com/" },
   { name: "Smalltalk", released: new Date("1980-01-01"), link: "https://en.wikipedia.org/wiki/Smalltalk" },
   { name: "Spark (Apache)", released: new Date("2014-06-26"), link: "https://spark.apache.org/" },
