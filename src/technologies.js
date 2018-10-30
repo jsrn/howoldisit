@@ -119,6 +119,7 @@ const technologies = [
   { name: "Python 1", released: new Date("1991-02-20"), icon: "python", link: "https://www.python.org/" },
   { name: "Python 2", released: new Date("2000-11-16"), icon: "python", link: "https://www.python.org/" },
   { name: "Python 3", released: new Date("2008-12-03"), icon: "python", link: "https://www.python.org/" },
+  { name: "Pyramid", released: new Date("2008-07-08"), link: "https://trypyramid.com" },
   { name: "PyTorch", released: new Date("2016-08-26"), link: "https://pytorch.org/" },
   { name: "R", released: new Date("1993-08-01"), icon: "r", links: "https://www.r-project.org/" },
   { name: "RabbitMQ", released: new Date("2007-02-08"), link: "https://www.rabbitmq.com/"},
