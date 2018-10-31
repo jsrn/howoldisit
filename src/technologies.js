@@ -35,6 +35,7 @@ const technologies = [
   { name: "CodeIgniter", released: new Date("2006-03-28"), icon: "codeIgniter", link: "https://codeigniter.com/" },
   { name: "ColdFusion", released: new Date("1995-07-02"), link: "https://en.wikipedia.org/wiki/Adobe_ColdFusion" },
   { name: "Concourse", released: new Date("2014-04-19"), icon: "concourseci" },
+  { name: "Corona (Game Engine)", released: new Date("2009-12-01"), link: "https://coronalabs.com/" },
   { name: "CouchDB", released: new Date("2005-03-01"), link: "http://couchdb.apache.org/" },
   { name: "Crystal", released: new Date("2014-07-18"), link: "https://crystal-lang.org/" },
   { name: "CSS", released: new Date("1996-12-17"), icon: "css", link: "https://en.wikipedia.org/wiki/Cascading_Style_Sheets" },
