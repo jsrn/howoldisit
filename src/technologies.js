@@ -97,6 +97,7 @@ const technologies = [
   { name: "Lodash", released: new Date("2012-04-23"), link: "https://lodash.com/" },
   { name: "Logo", released: new Date("1967-01-01"), link: "http://el.media.mit.edu/logo-foundation/" },
   { name: "Lua", released: new Date("1993-07-28"), icon: "lua", link: "https://www.lua.org/" },
+  { name: "Lucene (Apache)", released: new Date("1999-09-24"),  link: "https://lucene.apache.org/" },
   { name: "Magento", released: new Date("2008-03-31"), link: "https://magento.com/", icon: "magento" },
   { name: "Markdown", released: new Date("2004-03-19"), link: "https://daringfireball.net/projects/markdown/" },
   { name: "Maven", released: new Date("2004-08-13"), link: "https://maven.apache.org/" },
