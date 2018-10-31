@@ -1,5 +1,3 @@
-/*jshint esversion: 6 */
-
 const technologies = [
   // Please maintain alphabetical order when you add a technology(validate with "npm test") :)
   // Date format is YYYY-MM-DD
