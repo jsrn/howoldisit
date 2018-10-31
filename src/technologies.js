@@ -1,5 +1,5 @@
 const technologies = [
-  // Please maintain alphabetical order when you add a technology(validate with "npm test") :)
+  // Please maintain alphabetical order when you add a technology(validate with "npm test")  :)
   // Date format is YYYY-MM-DD
   { name: ".NET Core", released: new Date("2016-6-27"), link: "https://www.microsoft.com/net" },
   { name: ".NET Framework", released: new Date("2002-2-13"), link: "https://www.microsoft.com/net" },
