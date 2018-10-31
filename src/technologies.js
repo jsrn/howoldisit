@@ -118,6 +118,7 @@ const technologies = [
   { name: "pandas", released: new Date("2008-02-11"), link: "https://pandas.pydata.org/" },
   { name: "Perl", released: new Date("1987-12-18"), link: "https://www.perl.org/" },
   { name: "Phalcon", released: new Date("2012-11-14") },
+  { name: "Phoenix", released: new Date("2014-04-30"), link: "https://phoenixframework.org/" },
   { name: "PHP", released: new Date("1995-06-08"), icon: "php", link: "http://www.php.net/" },
   { name: "Polymer", released: new Date("2015-06-02"), link: "https://www.polymer-project.org/" },
   { name: "PostgreSQL", released: new Date("1996-07-08"), link: "https://www.postgresql.org/" },
