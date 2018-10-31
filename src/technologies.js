@@ -60,6 +60,7 @@ const technologies = [
   { name: "Gatsby", released: new Date("2017-08-06"), icon: "gatsby", link: "https://www.gatsbyjs.org/" },
   { name: "Gearman", released: new Date("2009-01-08"), link: "http://gearman.org/" },
   { name: "Gensim", released: new Date("2009-08-31"), link: "https://radimrehurek.com/gensim/" },
+  { name: "Ghost", released: new Date("2013-10-14"), link: "https://ghost.org/" },
   { name: "Git", released: new Date("2005-04-03"), icon: "git", link: "https://git-scm.com/" },
   { name: "Go", released: new Date("2009-10-10"), icon: "go", link: "https://golang.org/" },
   { name: "Grafana", released: new Date("2013-12-11"), icon: "grafana", link: "https://grafana.com/" },
