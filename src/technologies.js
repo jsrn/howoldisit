@@ -13,6 +13,7 @@ const technologies = [
   { name: "AngularJS", released: new Date("2010-10-20"), icon: "angular", link: "https://angularjs.org/" },
   { name: "Ansible", released: new Date("2012-03-20"), link: "https://www.ansible.com/" },
   { name: "Assembly", released: new Date("1949-01-01"), icon: "asm", link: "https://en.wikipedia.org/wiki/Assembly_language" },
+  { name: "Aurelia", released: new Date("2014-12-10"), link: "https://aurelia.io/" },
   { name: "Babbage Assembly", released: new Date("1971-01-01"), link: "https://en.wikipedia.org/wiki/Babbage_(programming_language)" },
   { name: "Babel", released: new Date("2014-09-28"), link: "https://babeljs.io/" },
   { name: "BackBoneJS", released: new Date("2010-10-13"), icon: "backbone", link: "https://backbonejs.org/" },
