@@ -18,6 +18,14 @@ class App extends Component {
     this.rowStyle = this.rowStyle.bind(this);
   }
 
+  componentDidMount() {
+    const filter = decodeURI(window.location.hash.slice(1)); //remove the # symbol
+    this.filterInput.current.value = filter;
+    this.setState({
+      filter
+    });
+  }
+
   filterChanged(event) {
     window.location.hash = event.target.value;
     this.setState({
