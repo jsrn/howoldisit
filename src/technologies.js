@@ -171,6 +171,7 @@ const technologies = [
   { name: "The World Wide Web", released: new Date("1990-12-25"), icon: "www", link: "https://en.wikipedia.org/wiki/World_Wide_Web" },
   { name: "This project", released: new Date("2018-10-25"), link: "https://howoldisit.glitch.me/" },
   { name: "TOML", released: new Date("2013-01-23"), link: "https://github.com/toml-lang/toml" },
+  { name: "Twig", released: new Date("2009-09-12"), link: "https://github.com/toml-lang/toml" },
   { name: "TypeScript", released: new Date("2012-10-01"), icon: "typeScript", link: "https://www.typescriptlang.org/" },
   { name: "Ubuntu", released: new Date("2004-10-20"), link: "https://www.ubuntu.com" },
   { name: "Underscore.js", released: new Date("2009-10-28"), link: "https://underscorejs.org/" },
