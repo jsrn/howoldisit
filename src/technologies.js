@@ -185,7 +185,10 @@ const technologies = [
   { name: "Xamarin Forms", released: new Date("2014-05-28"), link: "https://github.com/xamarin/Xamarin.Forms" },
   { name: "XAML", released: new Date("2008-07-01"), link: "https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language" },
   { name: "XML", released: new Date("1998-02-10"), icon: "xml", link: "https://en.wikipedia.org/wiki/XML" },
-  { name: "Yaml", released: new Date("2001-06-11"), link: "http://yaml.org/" }
+  { name: "Zend Framework 0.1.1", released: new Date("2006-03-03"), link: "https://framework.zend.com/" },
+  { name: "Zend Framework 1", released: new Date("2007-06-30"), link: "https://framework.zend.com/" },
+  { name: "Zend Framework 2", released: new Date("2012-09-04"), link: "https://framework.zend.com/" },
+  { name: "Zend Framework 3", released: new Date("2016-06-28"), link: "https://framework.zend.com/" }
 ];
 
 export default technologies;
