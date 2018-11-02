@@ -13,9 +13,6 @@ class App extends Component {
       orderDesc: false,
       technologies
     };
-
-    this.filterChanged = this.filterChanged.bind(this);
-    this.rowStyle = this.rowStyle.bind(this);
   }
 
   filterChanged(event) {
