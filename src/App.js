@@ -84,7 +84,7 @@ class App extends Component {
       let years = this.yearsSince(tech.released);
       rows.push(
         <p key={tech.name} style={this.rowStyle(tech.name)}>
-          <a target={tech.link ? "_blank": ""} rel='noopener noreferrer' href={tech.link ? tech.link: '#'}>
+          <a target={tech.link ? "_blank": ""} rel='noopener noreferrer' href={tech.link || '#'}>
             <Icon icon={tech.icon} />
             <strong>{tech.name}</strong>
           </a> has been out for <strong>{years < 1 ? 'less than a' : years} year{years > 1 ? 's' : ''}</strong>
