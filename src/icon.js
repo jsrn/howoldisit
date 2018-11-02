@@ -476,7 +476,7 @@ const icons = {
 const Icon = props => {
   const icon = icons[props.icon]  || icons.default;
   return (
-    <svg className="icon" width="22" height="22" viewBox={icon.viewBox || '0 0 1024 1024'} transform={icon.transform || 'scale(1, 1)'}>
+    <svg className="icon" viewBox={icon.viewBox || '0 0 1024 1024'} transform={icon.transform || 'scale(1, 1)'}>
       {
         icon.path.map((p, i) => <path d={p} key={i}></path>)
       }
