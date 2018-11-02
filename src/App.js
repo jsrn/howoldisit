@@ -80,19 +80,19 @@ class App extends Component {
     let rows = [];
     let options = [];
    
-    for (let i = 0; i < this.state.technologies.length; i++) {
-      let years = this.yearsSince(this.state.technologies[i].released);
+    for (const tech of this.state.technologies) {
+      let years = this.yearsSince(tech.released);
       rows.push(
-        <p key={this.state.technologies[i].name} style={this.rowStyle(this.state.technologies[i].name)}>
-          <a target={this.state.technologies[i].link ? "_blank": ""} rel='noopener noreferrer' href={this.state.technologies[i].link ? this.state.technologies[i].link: '#'}>
-            <Icon icon={this.state.technologies[i].icon} />
-            <strong>{this.state.technologies[i].name}</strong>
+        <p key={tech.name} style={this.rowStyle(tech.name)}>
+          <a target={tech.link ? "_blank": ""} rel='noopener noreferrer' href={tech.link ? tech.link: '#'}>
+            <Icon icon={tech.icon} />
+            <strong>{tech.name}</strong>
           </a> has been out for <strong>{years < 1 ? 'less than a' : years} year{years > 1 ? 's' : ''}</strong>
         </p>
       );
 
       options.push(
-        <option key={this.state.technologies[i].name} value={this.state.technologies[i].name} />
+        <option key={tech.name} value={tech.name} />
       )
     }
 
