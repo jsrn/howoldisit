@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import technologies from './technologies';
 import './App.css';
-import Icon from './icon';
 import Fuse from 'fuse.js'
 
 import Filter from './components/Filter'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import List from './components/List'
 
 class App extends Component {
   delayTimer = null
@@ -39,10 +41,6 @@ class App extends Component {
         items: technologies // Show all technologies if not searching
       })      
     }, 200)
-  }
-
-  yearsSince = (date) => {
-    return Math.floor((new Date() - new Date(date)) / (365 * 60 * 24 * 1000 * 60));
   }
 
   handleSort = (e) => {
@@ -93,33 +91,16 @@ class App extends Component {
     const { items } = this.state
     return (
       <div className="App">
-        <header className="App-header">
-          <h1>How long has <input id="tech-dropdown" type="search" list="technologies" placeholder="react, vue, ember, etc." onChange={this.filterChanged} /> existed?
-            <datalist id="technologies">
-              {options}
-            </datalist> </h1>
-        </header>
+        <Header
+          options={options}
+          onChange={this.filterChanged}/>
 
         <main>
           <p>This is a handy tool for tech recruiters who ask for fifteen years experience in technologies that have only existed for three months.</p>
           <Filter
             handleSort={this.handleSort} />
-          {
-            items.map(tech => 
-              <p key={tech.name}>
-                <a target={tech.link ? "_blank": ""} rel='noopener noreferrer' href={tech.link ? tech.link: '#'}>
-                  <Icon icon={tech.icon} />
-                  <strong>{tech.name}</strong>
-                </a> has been out for <strong>{this.yearsSince(tech.released) < 1 ? 'less than a' : this.yearsSince(tech.released)} year{this.yearsSince(tech.released) > 1 ? 's' : ''}</strong>
-              </p>
-            )
-          }
-
-          <div id="footer">
-            <p>Missing a technology? Find this repo on <a href="https://github.com/jsrn/howoldisit">GitHub</a>. Want a piece of me? Hurl abuse on <a href="https://twitter.com/jsrndoftime">Twitter</a>.
-            </p>
-          </div>
-
+          <List items={items}/>
+          <Footer/> 
         </main>
       </div>
     );
