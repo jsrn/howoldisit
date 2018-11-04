@@ -33,13 +33,15 @@ class App extends Component {
         const items = this.fuse.search(searchWord)      
         this.setState({
           items: items
-        })
-        return;
+        })        
+      } else {
+        this.setState({        
+          items: technologies // Show all technologies if not searching
+        })           
       }
-      this.setState({
-        filter: searchWord,
-        items: technologies // Show all technologies if not searching
-      })      
+      setTimeout(() => { // Wait for update state
+        this.orderTechnologies()
+      }, 10)
     }, 200)
   }
 
@@ -80,21 +82,13 @@ class App extends Component {
     })
   }
 
-  render() {
-    let options = [];
-   
-    for (let i = 0; i < this.state.items.length; i++) {     
-      options.push(
-         <option key={this.state.items[i].name} value={this.state.items[i].name} />
-       )
-     }
+  render() {    
     const { items } = this.state
     return (
       <div className="App">
         <Header
-          options={options}
+          options={items.slice(0, 10)}
           onChange={this.filterChanged}/>
-
         <main>
           <p>This is a handy tool for tech recruiters who ask for fifteen years experience in technologies that have only existed for three months.</p>
           <Filter
