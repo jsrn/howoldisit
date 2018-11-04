@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import technologies from './technologies';
 import './App.css';
 import Icon from './icon';
-
 import Fuse from 'fuse.js'
+
+import Filter from './components/Filter'
 
 class App extends Component {
   delayTimer = null
@@ -17,6 +18,7 @@ class App extends Component {
   }
 
   fuse = new Fuse(technologies, {
+    shouldSort: true,
     keys: [
       "name"
     ]
@@ -102,20 +104,7 @@ class App extends Component {
 
         <main>
           <p>This is a handy tool for tech recruiters who ask for fifteen years experience in technologies that have only existed for three months.</p>
-          
-          <div className="inline">
-            <p className="inline">Order by </p>
-            <div className={this.state.sortBy === "tech" ? "inline bold" : "inline"} onClick={this.handleSort}>
-              Tech
-            </div>
-            {this.state.sortBy === "tech" && <div className={this.state.orderDesc ? "arrow arrow-down" : "arrow arrow-up"} />}
-            <p className="inline">, </p>           
-            <div className={this.state.sortBy !== "tech" ? "inline bold" : "inline"} onClick={this.handleSort}>
-              Age
-            </div>
-            {this.state.sortBy !== "tech" && <div className={this.state.orderDesc ? "arrow arrow-down" : "arrow arrow-up"} />}
-          </div>    
-
+          <Filter/>
           {
             items.map(tech => 
               <p key={tech.name}>
