@@ -92,3 +92,25 @@ main p a {
     transform: rotate(360deg);
   }
 }
+
+.Filter {  
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Filter__title {
+  
+  margin: 0;
+}
+
+.Filter select {
+  width: 150px;
+  cursor: pointer;
+  font-size: 18px;
+  background: white;
+  border-radius: 4px;
+  padding: 5px 2px;
+  margin: 0 10px;
+}

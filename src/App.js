@@ -1,68 +1,74 @@
 import React, { Component } from 'react';
 import technologies from './technologies';
 import './App.css';
-import Icon from './icon';
+import Fuse from 'fuse.js'
+
+import Filter from './components/Filter'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import List from './components/List'
 
 class App extends Component {
-  constructor() {
-    super();
+  delayTimer = null
 
-    this.state = {
-      filter: "",
-      sortBy: "tech",
-      orderDesc: false,
-      technologies
-    };
-
-    this.filterChanged = this.filterChanged.bind(this);
-    this.rowStyle = this.rowStyle.bind(this);
+  state = {
+    filter: "",
+    sortBy: "tech",
+    orderDesc: false,    
+    items: technologies
   }
 
-  filterChanged(event) {
-    this.setState({
-      filter: event.target.value
-    })
-  }
-
-  rowStyle(name) {
-    let style = {};
-
-    if (name.toLowerCase().indexOf(this.state.filter.toLowerCase()) === -1) {
-      style.display = "none";
-    }
-
-    return style;
-  }
-
-  yearsSince(date) {
-    return Math.floor((new Date() - new Date(date)) / (365 * 60 * 24 * 1000 * 60));
+  fuse = new Fuse(technologies, {
+    shouldSort: true,
+    keys: [
+      "name"
+    ]
+  })
+  
+  filterChanged = (event) => {
+    clearTimeout(this.delayTimer)
+    const searchWord = event.target.value
+    this.delayTimer = setTimeout(() => {           
+      if(searchWord.length) {
+        const items = this.fuse.search(searchWord)      
+        this.setState({
+          items: items
+        })        
+      } else {
+        this.setState({        
+          items: technologies // Show all technologies if not searching
+        })           
+      }
+      setTimeout(() => { // Wait for update state
+        this.orderTechnologies()
+      }, 10)
+    }, 200)
   }
 
   handleSort = (e) => {
-    let sortBy = this.state.sortBy;
-    let newSort = e.target.innerText.toLowerCase();
-    let orderDesc = this.state.orderDesc;
-  
+    const value = e.target.value    
     this.setState({
-      orderDesc: sortBy === newSort ? !orderDesc : false,
-      sortBy: newSort
-    }, () => this.orderTechnologies());
+      sortBy: value.split('_')[0],
+      orderDesc: value.split('_')[1] === 'desc'
+    })
+    setTimeout(() => { // Wait for update state
+      this.orderTechnologies()
+    }, 10)
   }
 
-  orderTechnologies(){
-    let techList = JSON.parse(JSON.stringify(this.state.technologies));
-    let orderDesc = this.state.orderDesc;
-
-    if(this.state.sortBy === 'tech'){
-      techList.sort((a, b) => {
+  orderTechnologies = () => {        
+    const { orderDesc, sortBy, items } = this.state
+    let sortedItems = items.slice(0)    
+    if(sortBy === 'name'){
+      sortedItems.sort((a, b) => {
         let aName = a.name.toLowerCase();
         let bName = b.name.toLowerCase();
         if (aName > bName) return orderDesc ? -1 : 1;
         if (aName < bName) return orderDesc ? 1 : -1;
         return 0;
       });
-    }else{
-      techList.sort((a, b) => {
+    }else { // sort by age
+      sortedItems.sort((a, b) => {
         let aRel = a.released;
         let bRel = b.released;
         if (aRel > bRel) return orderDesc ? 1 : -1;
@@ -72,62 +78,23 @@ class App extends Component {
     }
 
     this.setState({
-      technologies: techList
-    });
+      items: sortedItems
+    })
   }
 
-  render() {
-    let rows = [];
-    let options = [];
-   
-    for (let i = 0; i < this.state.technologies.length; i++) {
-      let years = this.yearsSince(this.state.technologies[i].released);
-      rows.push(
-        <p key={this.state.technologies[i].name} style={this.rowStyle(this.state.technologies[i].name)}>
-          <a target={this.state.technologies[i].link ? "_blank": ""} rel='noopener noreferrer' href={this.state.technologies[i].link ? this.state.technologies[i].link: '#'}>
-            <Icon icon={this.state.technologies[i].icon} />
-            <strong>{this.state.technologies[i].name}</strong>
-          </a> has been out for <strong>{years < 1 ? 'less than a' : years} year{years > 1 ? 's' : ''}</strong>
-        </p>
-      );
-
-      options.push(
-        <option key={this.state.technologies[i].name} value={this.state.technologies[i].name} />
-      )
-    }
-
+  render() {    
+    const { items } = this.state
     return (
       <div className="App">
-        <header className="App-header">
-          <h1>How long has <input id="tech-dropdown" type="search" list="technologies" placeholder="react, vue, ember, etc." onChange={this.filterChanged} /> existed?
-            <datalist id="technologies">
-              {options}
-            </datalist></h1>
-        </header>
-
+        <Header
+          options={items.slice(0, 10)}
+          onChange={this.filterChanged}/>
         <main>
           <p>This is a handy tool for tech recruiters who ask for fifteen years experience in technologies that have only existed for three months.</p>
-          
-          <div className="inline">
-            <p className="inline">Order by </p>
-            <div className={this.state.sortBy === "tech" ? "inline bold" : "inline"} onClick={this.handleSort}>
-              Tech
-            </div>
-            {this.state.sortBy === "tech" && <div className={this.state.orderDesc ? "arrow arrow-down" : "arrow arrow-up"} />}
-            <p className="inline">, </p>           
-            <div className={this.state.sortBy !== "tech" ? "inline bold" : "inline"} onClick={this.handleSort}>
-              Age
-            </div>
-            {this.state.sortBy !== "tech" && <div className={this.state.orderDesc ? "arrow arrow-down" : "arrow arrow-up"} />}
-          </div>    
-
-          {rows}
-
-          <div id="footer">
-            <p>Missing a technology? Find this repo on <a href="https://github.com/jsrn/howoldisit">GitHub</a>. Want a piece of me? Hurl abuse on <a href="https://twitter.com/jsrndoftime">Twitter</a>.
-            </p>
-          </div>
-
+          <Filter
+            handleSort={this.handleSort} />
+          <List items={items}/>
+          <Footer/> 
         </main>
       </div>
     );
