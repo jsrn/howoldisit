@@ -12,8 +12,7 @@ class App extends Component {
   state = {
     filter: "",
     sortBy: "tech",
-    orderDesc: false,
-    technologies,
+    orderDesc: false,    
     items: technologies
   }
 
@@ -47,30 +46,29 @@ class App extends Component {
   }
 
   handleSort = (e) => {
-    let sortBy = this.state.sortBy;
-    let newSort = e.target.innerText.toLowerCase();
-    let orderDesc = this.state.orderDesc;
-  
+    const value = e.target.value    
     this.setState({
-      orderDesc: sortBy === newSort ? !orderDesc : false,
-      sortBy: newSort
-    }, () => this.orderTechnologies());
+      sortBy: value.split('_')[0],
+      orderDesc: value.split('_')[1] === 'desc'
+    })
+    setTimeout(() => { // Wait for update state
+      this.orderTechnologies()
+    }, 10)
   }
 
-  orderTechnologies = () => {
-    let techList = JSON.parse(JSON.stringify(this.state.technologies));
-    let orderDesc = this.state.orderDesc;
-
-    if(this.state.sortBy === 'tech'){
-      techList.sort((a, b) => {
+  orderTechnologies = () => {        
+    const { orderDesc, sortBy, items } = this.state
+    let sortedItems = items.slice(0)    
+    if(sortBy === 'name'){
+      sortedItems.sort((a, b) => {
         let aName = a.name.toLowerCase();
         let bName = b.name.toLowerCase();
         if (aName > bName) return orderDesc ? -1 : 1;
         if (aName < bName) return orderDesc ? 1 : -1;
         return 0;
       });
-    }else{
-      techList.sort((a, b) => {
+    }else { // sort by age
+      sortedItems.sort((a, b) => {
         let aRel = a.released;
         let bRel = b.released;
         if (aRel > bRel) return orderDesc ? 1 : -1;
@@ -80,16 +78,16 @@ class App extends Component {
     }
 
     this.setState({
-      technologies: techList
-    });
+      items: sortedItems
+    })
   }
 
   render() {
-     let options = [];
+    let options = [];
    
-    for (let i = 0; i < this.state.technologies.length; i++) {     
+    for (let i = 0; i < this.state.items.length; i++) {     
       options.push(
-         <option key={this.state.technologies[i].name} value={this.state.technologies[i].name} />
+         <option key={this.state.items[i].name} value={this.state.items[i].name} />
        )
      }
     const { items } = this.state
@@ -104,7 +102,8 @@ class App extends Component {
 
         <main>
           <p>This is a handy tool for tech recruiters who ask for fifteen years experience in technologies that have only existed for three months.</p>
-          <Filter/>
+          <Filter
+            handleSort={this.handleSort} />
           {
             items.map(tech => 
               <p key={tech.name}>
