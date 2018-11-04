@@ -3,6 +3,8 @@ import technologies from './technologies';
 import './App.css';
 import Icon from './icon';
 
+import Fuse from 'fuse.js'
+
 class App extends Component {
   constructor() {
     super();
@@ -11,27 +13,34 @@ class App extends Component {
       filter: "",
       sortBy: "tech",
       orderDesc: false,
-      technologies
+      technologies,
+      items: technologies
     };
 
-    this.filterChanged = this.filterChanged.bind(this);
-    this.rowStyle = this.rowStyle.bind(this);
-  }
-
-  filterChanged(event) {
-    this.setState({
-      filter: event.target.value
+    this.fuse = new Fuse(technologies, {
+      keys: [
+        "name"
+      ]
     })
   }
+  delayTimer = null
 
-  rowStyle(name) {
-    let style = {};
-
-    if (name.toLowerCase().indexOf(this.state.filter.toLowerCase()) === -1) {
-      style.display = "none";
-    }
-
-    return style;
+  filterChanged = (event) => {
+    clearTimeout(this.delayTimer)
+    const searchWord = event.target.value
+    this.delayTimer = setTimeout(() => {           
+      if(searchWord.length) {
+        const items = this.fuse.search(searchWord)      
+        this.setState({
+          items: items
+        })
+        return;
+      }
+      this.setState({
+        filter: searchWord,
+        items: technologies // Show all technologies if not searching
+      })      
+    }, 200)
   }
 
   yearsSince(date) {
@@ -77,32 +86,22 @@ class App extends Component {
   }
 
   render() {
-    let rows = [];
-    let options = [];
+     let rows = [];
+     let options = [];
    
-    for (let i = 0; i < this.state.technologies.length; i++) {
-      let years = this.yearsSince(this.state.technologies[i].released);
-      rows.push(
-        <p key={this.state.technologies[i].name} style={this.rowStyle(this.state.technologies[i].name)}>
-          <a target={this.state.technologies[i].link ? "_blank": ""} rel='noopener noreferrer' href={this.state.technologies[i].link ? this.state.technologies[i].link: '#'}>
-            <Icon icon={this.state.technologies[i].icon} />
-            <strong>{this.state.technologies[i].name}</strong>
-          </a> has been out for <strong>{years < 1 ? 'less than a' : years} year{years > 1 ? 's' : ''}</strong>
-        </p>
-      );
-
+    for (let i = 0; i < this.state.technologies.length; i++) {     
       options.push(
-        <option key={this.state.technologies[i].name} value={this.state.technologies[i].name} />
-      )
-    }
-
+         <option key={this.state.technologies[i].name} value={this.state.technologies[i].name} />
+       )
+     }
+    const { items } = this.state
     return (
       <div className="App">
         <header className="App-header">
           <h1>How long has <input id="tech-dropdown" type="search" list="technologies" placeholder="react, vue, ember, etc." onChange={this.filterChanged} /> existed?
             <datalist id="technologies">
               {options}
-            </datalist></h1>
+            </datalist> </h1>
         </header>
 
         <main>
@@ -121,7 +120,16 @@ class App extends Component {
             {this.state.sortBy !== "tech" && <div className={this.state.orderDesc ? "arrow arrow-down" : "arrow arrow-up"} />}
           </div>    
 
-          {rows}
+          {
+            items.map(tech => 
+              <p key={tech.name}>
+                <a target={tech.link ? "_blank": ""} rel='noopener noreferrer' href={tech.link ? tech.link: '#'}>
+                  <Icon icon={tech.icon} />
+                  <strong>{tech.name}</strong>
+                </a> has been out for <strong>{this.yearsSince(tech.released) < 1 ? 'less than a' : this.yearsSince(tech.released)} year{this.yearsSince(tech.released) > 1 ? 's' : ''}</strong>
+              </p>
+            )
+          }
 
           <div id="footer">
             <p>Missing a technology? Find this repo on <a href="https://github.com/jsrn/howoldisit">GitHub</a>. Want a piece of me? Hurl abuse on <a href="https://twitter.com/jsrndoftime">Twitter</a>.
