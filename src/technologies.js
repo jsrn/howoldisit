@@ -128,6 +128,7 @@ const technologies = [
   { name: "Phalcon", released: new Date("2012-11-14") },
   { name: "Phoenix", released: new Date("2014-04-30"), link: "https://phoenixframework.org/" },
   { name: "PHP", released: new Date("1995-06-08"), icon: "php", link: "http://www.php.net/" },
+  { name: "PHPStan", released: new Date("2016-06-17"), link: "https://github.com/phpstan" },
   { name: "Polymer", released: new Date("2015-06-02"), link: "https://www.polymer-project.org/" },
   { name: "PostgreSQL", released: new Date("1996-07-08"), link: "https://www.postgresql.org/" },
   { name: "Power BI", released: new Date("2015-07-24"), link: "https://powerbi.microsoft.com/en-us/" },
