@@ -115,6 +115,7 @@ const technologies = [
   { name: "MUMPS", released: new Date("1966-06-01"), link: "https://en.wikipedia.org/wiki/MUMPS" },
   { name: "MySQL", released: new Date("1995-05-23"), icon: "mySQL", link: "https://www.mysql.com/" },
   { name: "NativeScript", released: new Date("2015-05-04"), icon: "nativescript", link: "https://www.nativescript.org" },
+  { name: "Nette", released: new Date("2013-06-03"), link: "https://www.nette.org/" },
   { name: "Nginx", released: new Date("2004-10-04"), link: "https://www.nginx.com/", icon: "nginx" },
   { name: "Node.js", released: new Date("2009-05-27"), icon: "nodeJs", link: "https://nodejs.org/" },
   { name: "Numpy", released: new Date("2006-08-26"), link: "http://www.numpy.org/" },
