@@ -6,25 +6,22 @@ import Icon from './icon';
 import Fuse from 'fuse.js'
 
 class App extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      filter: "",
-      sortBy: "tech",
-      orderDesc: false,
-      technologies,
-      items: technologies
-    };
-
-    this.fuse = new Fuse(technologies, {
-      keys: [
-        "name"
-      ]
-    })
-  }
   delayTimer = null
 
+  state = {
+    filter: "",
+    sortBy: "tech",
+    orderDesc: false,
+    technologies,
+    items: technologies
+  }
+
+  fuse = new Fuse(technologies, {
+    keys: [
+      "name"
+    ]
+  })
+  
   filterChanged = (event) => {
     clearTimeout(this.delayTimer)
     const searchWord = event.target.value
@@ -43,7 +40,7 @@ class App extends Component {
     }, 200)
   }
 
-  yearsSince(date) {
+  yearsSince = (date) => {
     return Math.floor((new Date() - new Date(date)) / (365 * 60 * 24 * 1000 * 60));
   }
 
@@ -58,7 +55,7 @@ class App extends Component {
     }, () => this.orderTechnologies());
   }
 
-  orderTechnologies(){
+  orderTechnologies = () => {
     let techList = JSON.parse(JSON.stringify(this.state.technologies));
     let orderDesc = this.state.orderDesc;
 
@@ -86,7 +83,6 @@ class App extends Component {
   }
 
   render() {
-     let rows = [];
      let options = [];
    
     for (let i = 0; i < this.state.technologies.length; i++) {     
