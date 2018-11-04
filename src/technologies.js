@@ -163,6 +163,7 @@ const technologies = [
   { name: "Solidity", released: new Date("2014-08-01"), link: "https://en.wikipedia.org/wiki/Solidity" },
   { name: "Spark (Apache)", released: new Date("2014-06-26"), link: "https://spark.apache.org/" },
   { name: "Spring", released: new Date("2002-10-01"), link: "https://spring.io/" },
+  { name: "Standart ML", released: new Date("1983-00-00"), link: "https://en.wikipedia.org/wiki/Standard_ML" },
   { name: "SQL", released: new Date("1979-06-01"), link: "https://docs.oracle.com/cd/E12151_01/index.htm" },
   { name: "Swift", released: new Date("2014-06-02"), icon: "swift", link: "https://swift.org/" },
   { name: "Symfony", released: new Date("2011-07-28"), icon: "symfony", link: "https://symfony.com/" },
