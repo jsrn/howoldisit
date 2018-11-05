@@ -481,36 +481,15 @@ const icons = {
 };
 const Icon = props => {
   const icon = icons.hasOwnProperty(props.icon) ? props.icon : 'default';
-  return (< svg className="icon"
-    width="22"
-    height="22"
-    viewBox={
-      icons[icon].viewBox ? icons[icon].viewBox : '0 0 1024 1024'
-    }
-    transform={
-      icons[icon].transform ? icons[icon].transform : 'scale(1, 1)'
-    } > {
-      icons[icon].path.map((p, i) => <path d={
-        p
+  return (
+    <svg className="icon" width="22" height="22" viewBox={icons[icon].viewBox ? icons[icon].viewBox : '0 0 1024 1024'} transform={icons[icon].transform ? icons[icon].transform : 'scale(1, 1)'}>
+      {
+        icons[icon].path.map((p, i) => <path d={p} key={i} > </path>)
       }
-        key={
-          i
-        } > </path>)
-    } {
-      icons[icon].circle &&
-      icons[icon].circle.map((c, i) => < circle cx={
-        c.cx
+      {icons[icon].circle &&
+        icons[icon].circle.map((c, i) => <circle cx={c.cx} cy={c.cy} r={c.r} key={i}></circle>)
       }
-        cy={
-          c.cy
-        }
-        r={
-          c.r
-        }
-        key={
-          i
-        } > </circle>)
-    } </svg>
+   </svg>
   )
 };
 
