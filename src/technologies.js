@@ -90,7 +90,7 @@ const technologies = [
   { name: "Karaf", released: new Date("2010-08-23"), link: "https://karaf.apache.org/" },
   { name: "Keras", released: new Date("2015-04-27"), link: "https://keras.io/" },
   { name: "Knockout", released: new Date("2010-08-05"), link: "https://knockoutjs.com/" },
-  { name: "Kotlin", released: new Date("2016-02-15"), link: "https://kotlinlang.org/" },
+  { name: "Kotlin", released: new Date("2011-07-01"), link: "https://kotlinlang.org/" },
   { name: "Kubernetes", released: new Date("2014-07-07"), link: "https://kubernetes.io/" },
   { name: "Laravel", released: new Date("2011-09-09"), icon: "laravel", link: "https://laravel.com/" },
   { name: "Laravel 4", released: new Date("2013-06-28"), icon: "laravel", link: "https://laravel.com/" },
