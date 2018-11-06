@@ -155,6 +155,7 @@ const technologies = [
   { name: "Ruby", released: new Date("1995-12-21"), icon: "ruby", link: "https://www.ruby-lang.org/" },
   { name: "Ruby on Rails", released: new Date("2005-12-21"), icon: "rails", link: "https://rubyonrails.org/" },
   { name: "Rust", released: new Date("2015-06-05"), icon: "rust", link: "https://www.rust-lang.org/" },
+  { name: "RxJs", released: new Date("2015-09-02"), link: "https://rxjs-dev.firebaseapp.com" },
   { name: "Sass", released: new Date("2006-11-28"), icon: "sass", link: "https://sass-lang.com/" },
   { name: "Scala", released: new Date("2004-02-20"), link: "https://www.scala-lang.org/" },
   { name: "Scheme", released: new Date("1975-12-01"), link: "http://www.scheme-reports.org/" },
