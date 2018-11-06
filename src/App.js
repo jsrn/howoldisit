@@ -13,9 +13,23 @@ class App extends Component {
       orderDesc: false,
       technologies
     };
+
+    this.filterInput = React.createRef();
+
+    this.filterChanged = this.filterChanged.bind(this);
+    this.rowStyle = this.rowStyle.bind(this);
+  }
+
+  componentDidMount() {
+    const filter = decodeURI(window.location.hash.slice(1)); //remove the # symbol
+    this.filterInput.current.value = filter;
+    this.setState({
+      filter
+    });
   }
 
   filterChanged(event) {
+    window.location.hash = event.target.value;
     this.setState({
       filter: event.target.value
     })
@@ -96,7 +110,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>How long has <input id="tech-dropdown" type="search" list="technologies" placeholder="react, vue, ember, etc." onChange={this.filterChanged} /> existed?
+          <h1>How long has <input id="tech-dropdown" type="search" list="technologies" placeholder="react, vue, ember, etc." onChange={this.filterChanged} ref={this.filterInput} /> existed?
             <datalist id="technologies">
               {options}
             </datalist></h1>
