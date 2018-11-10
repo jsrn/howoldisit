@@ -69,6 +69,7 @@ const technologies = [
   { name: "Groovy", released: new Date("2007-01-02"), icon: "groovy", link: "http://groovy-lang.org/" },
   { name: "Hadoop (Apache)", released: new Date("2011-12-10"), link: "https://hadoop.apache.org/" },
   { name: "HANA", released: new Date("2010-06-18"), icon: "hana", link: "https://www.sap.com/products/hana.html" },
+  { name: "HAProxy", released: new Date("2001-12-16"), link: "https://www.haproxy.org/" },
   { name: "Haskell", released: new Date("1990-01-01"), icon: "haskell", link: "https://www.haskell.org/" },
   { name: "Haxe", released: new Date("2005-01-01"), link: "https://haxe.org/" },
   { name: "Hive (Apache)", released: new Date("2015-10-22"), link: "https://hive.apache.org/" },
