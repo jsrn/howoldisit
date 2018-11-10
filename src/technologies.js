@@ -96,6 +96,7 @@ const technologies = [
   { name: "Laravel 4", released: new Date("2013-06-28"), icon: "laravel", link: "https://laravel.com/" },
   { name: "Laravel 5", released: new Date("2015-03-04"), icon: "laravel", link: "https://laravel.com/" },
   { name: "LaTeX", released: new Date("1983-01-01"), link: "https://www.latex-project.org/" },
+  { name: "Lighttpd", released: new Date("2003-03-01"), link: "https://www.lighttpd.net/" },
   { name: "Linux", released: new Date("1991-08-25"), link: "https://www.linux.org/", icon: "linux" },
   { name: "Lisp", released: new Date("1958-08-01"), link: "https://en.wikipedia.org/wiki/Lisp_(programming_language)" },
   { name: "Lodash", released: new Date("2012-04-23"), link: "https://lodash.com/" },
