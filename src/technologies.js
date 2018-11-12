@@ -25,6 +25,7 @@ const technologies = [
   { name: "C", released: new Date("1972-01-01"), icon: "c", link: "https://en.wikipedia.org/wiki/C_(programming_language)" },
   { name: "C#", released: new Date("2001-12-01"), icon: "cSharp", link: "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" },
   { name: "C++", released: new Date("1985-10-01"), icon: "cPlusPlus", link: "http://www.cplusplus.com/" },
+  { name: "Caddy", released: new Date("2015-04-28"), link: "https://caddyserver.com/" },
   { name: "CakePHP", released: new Date("2005-04-01"), icon: "cakePHP", link: "https://cakephp.org/" },
   { name: "Cassandra", released: new Date("2010-04-12"), link: "http://cassandra.apache.org/" },
   { name: "CFML", released: new Date("1995-07-02"), link: "https://en.wikipedia.org/wiki/ColdFusion_Markup_Language" },
