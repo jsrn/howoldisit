@@ -6,6 +6,7 @@ const technologies = [
   { name: "ABAP", released: new Date("1983-01-01"), icon: "abap", link: "https://en.wikipedia.org/wiki/ABAP" },
   { name: "Ada", released: new Date("1980-01-01"), link: "https://en.wikipedia.org/wiki/Ada_(programming_language)" },
   { name: "AdonisJs", released: new Date("2015-08-15"), link: "https://adonisjs.com/" },
+  { name: "Agda", released: new Date("1999-01-01"), link: "http://wiki.portal.chalmers.se/agda" },
   { name: "Airflow (Apache)", released: new Date("2017-04-19"), link: "https://airflow.apache.org/" },
   { name: "Amazon Web Services", released: new Date("2004-03-15"), link: "https://aws.amazon.com/", icon: "aws" },
   { name: "Android", released: new Date("2008-09-23"), icon: "android", link: "https://www.android.com/" },
