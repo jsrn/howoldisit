@@ -202,7 +202,8 @@ const technologies = [
   { name: "Zend Framework 0.1.1", released: new Date("2006-03-03"), link: "https://framework.zend.com/" },
   { name: "Zend Framework 1", released: new Date("2007-06-30"), link: "https://framework.zend.com/" },
   { name: "Zend Framework 2", released: new Date("2012-09-04"), link: "https://framework.zend.com/" },
-  { name: "Zend Framework 3", released: new Date("2016-06-28"), link: "https://framework.zend.com/" }
+  { name: "Zend Framework 3", released: new Date("2016-06-28"), link: "https://framework.zend.com/" },
+  { name: "Zig", released: new Date("2015-08-05"), icon: "default", link: "https://ziglang.org/" },
 ];
 
 export default technologies;
