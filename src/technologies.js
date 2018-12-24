@@ -83,7 +83,7 @@ const technologies = [
   { name: "Inferno JS", released: new Date("2015-12-19"), link: "https://infernojs.org", icon: "infernojs" },
   { name: "Ionic", released: new Date("2013-11-01"), icon: "ionic", link: "https://ionicframework.com/" },
   { name: "Istio", released: new Date("2018-07-31"), link: "https://istio.io/" },
-  { name: "Java", released: new Date("1996-10-10"), icon: "java", link: "https://www.java.com/" },
+  { name: "Java", released: new Date("1996-01-23"), icon: "java", link: "https://www.java.com/" },
   { name: "JavaScript", released: new Date("1995-12-04"), icon: "javaScript", link: "https://www.javascript.com/" },
   { name: "Jekyll", released: new Date("2008-11-17"), icon: "jekyll", link: "https://jekyllrb.com/" },
   { name: "Jenkins (formerly Hudson)", released: new Date("2005-02-07"), icon: "jenkins", link: "https://jenkins.io/" },
