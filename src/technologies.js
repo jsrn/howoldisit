@@ -178,7 +178,7 @@ const technologies = [
   { name: "SQL", released: new Date("1979-06-01"), link: "https://docs.oracle.com/cd/E12151_01/index.htm" },
   { name: "Subversion (Apache)", released: new Date("2000-10-20"), link: "https://subversion.apache.org/" },
   { name: "Swift", released: new Date("2014-06-02"), icon: "swift", link: "https://swift.org/" },
-  { name: "Symfony", released: new Date("2011-07-28"), icon: "symfony", link: "https://symfony.com/" },
+  { name: "Symfony", released: new Date("2005-10-18"), icon: "symfony", link: "https://symfony.com/" },
   { name: "Tensorflow", released: new Date("2015-12-09"), icon: "tensorflow", link: "https://www.tensorflow.org/" },
   { name: "Terraform", released: new Date("2014-08-28"), link: "https://www.terraform.io/" },
   { name: "The World Wide Web", released: new Date("1990-12-25"), icon: "www", link: "https://en.wikipedia.org/wiki/World_Wide_Web" },
