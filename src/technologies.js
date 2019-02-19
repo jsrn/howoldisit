@@ -111,6 +111,7 @@ const technologies = [
   { name: "Magento", released: new Date("2008-03-31"), link: "https://magento.com/", icon: "magento" },
   { name: "Markdown", released: new Date("2004-03-19"), link: "https://daringfireball.net/projects/markdown/" },
   { name: "Maven", released: new Date("2004-08-13"), link: "https://maven.apache.org/" },
+  { name: "MEAN stack", released: new Date("2013-04-30"), link: "https://en.wikipedia.org/wiki/MEAN_(software_bundle)" },
   { name: "Mercurial", released: new Date("2005-04-19"), link: "https://www.mercurial-scm.org/" },
   { name: "Mesos (Apache)", released: new Date("2016-08-27"), link: "http://mesos.apache.org/" },
   { name: "Metal", released: new Date("2014-06-02"), link: "https://en.wikipedia.org/wiki/Metal_(API)" },
