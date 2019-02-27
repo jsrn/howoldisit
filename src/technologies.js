@@ -164,7 +164,7 @@ const technologies = [
   { name: "Rollup", released: new Date("2015-05-15"), link: "https://rollupjs.org/" },
   { name: "Ruby", released: new Date("1995-12-21"), icon: "ruby", link: "https://www.ruby-lang.org/" },
   { name: "Ruby on Rails", released: new Date("2005-12-21"), icon: "rails", link: "https://rubyonrails.org/" },
-  { name: "Rust", released: new Date("2015-06-05"), icon: "rust", link: "https://www.rust-lang.org/" },
+  { name: "Rust", released: new Date("2010-07-07"), icon: "rust", link: "https://www.rust-lang.org/" },
   { name: "RxJs", released: new Date("2013-03-01"), link: "https://rxjs-dev.firebaseapp.com" },
   { name: "SAP GUI Scripting", released: new Date("2002-03-01"), link: "https://wiki.scn.sap.com/wiki/display/ATopics/SAP+GUI+Scripting" },
   { name: "Sass", released: new Date("2006-11-28"), icon: "sass", link: "https://sass-lang.com/" },
