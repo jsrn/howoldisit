@@ -114,7 +114,7 @@ const technologies = [
   { name: "Markdown", released: new Date("2004-03-19"), link: "https://daringfireball.net/projects/markdown/" },
   { name: "Maven", released: new Date("2004-08-13"), link: "https://maven.apache.org/" },
   { name: "Mercurial", released: new Date("2005-04-19"), link: "https://www.mercurial-scm.org/" },
-  { name: "Mesos (Apache)", released: new Date("2016-08-27"), link: "http://mesos.apache.org/" },
+  { name: "Mesos (Apache)", released: new Date("2010-09-30"), link: "http://mesos.apache.org/" },
   { name: "Metal", released: new Date("2014-06-02"), link: "https://en.wikipedia.org/wiki/Metal_(API)" },
   { name: "Meteor", released: new Date("2012-01-20"), icon: "meteor" },
   { name: "Microsoft Azure", released: new Date("2010-02-01"), link: "https://azure.microsoft.com/en-us/" },
