@@ -164,6 +164,8 @@ const technologies = [
   { name: "Redux", released: new Date("2015-06-02"), link: "https://redux.js.org/", icon: "redux" },
   { name: "Rexx", released: new Date("1979-03-20"), link: "http://rexxla.org/" },
   { name: "Rollup", released: new Date("2015-05-15"), link: "https://rollupjs.org/" },
+  { name: "ROS", released: new Date("2010-03-02"), link: "http://www.ros.org/" },
+  { name: "ROS 2", released: new Date("2015-08-31"), link: "https://index.ros.org/doc/ros2/" },
   { name: "Ruby", released: new Date("1995-12-21"), icon: "ruby", link: "https://www.ruby-lang.org/" },
   { name: "Ruby on Rails", released: new Date("2005-12-21"), icon: "rails", link: "https://rubyonrails.org/" },
   { name: "Rust", released: new Date("2010-07-07"), icon: "rust", link: "https://www.rust-lang.org/" },
