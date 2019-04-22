@@ -147,6 +147,7 @@ const technologies = [
   { name: "Preact", released: new Date("2015-09-11"), link: "https://preactjs.com/" },
   { name: "Prometheus", released: new Date("2012-11-24"), icon: "prometheus", link: "https://prometheus.io/" },
   { name: "Protovis", released: new Date("2007-10-07"), link: "http://mbostock.github.io/protovis/" },
+  { name: "PX4 Firmware", released: new Date("2014-10-25"), link: "https://px4.io/" },
   { name: "Pyramid", released: new Date("2008-07-08"), link: "https://trypyramid.com" },
   { name: "Python 1", released: new Date("1991-02-20"), icon: "python", link: "https://www.python.org/" },
   { name: "Python 2", released: new Date("2000-11-16"), icon: "python", link: "https://www.python.org/" },
