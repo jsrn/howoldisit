@@ -120,6 +120,7 @@ const technologies = [
   { name: "Meteor", released: new Date("2012-01-20"), icon: "meteor" },
   { name: "Microsoft Azure", released: new Date("2010-02-01"), link: "https://azure.microsoft.com/en-us/" },
   { name: "MIPS", released: new Date("1985-02-01"), link: "https://en.wikipedia.org/wiki/MIPS_architecture" },
+  { name: "mIRC scripting language", released: new Date("1995-01-01"), link: "https://en.wikipedia.org/wiki/MIRC_scripting_language" },
   { name: "MongoDB", released: new Date("2009-02-11"), icon: "mongoDB", link: "https://www.mongodb.com/" },
   { name: "MS-DOS", released: new Date("1981-08-12"), link: "https://en.wikipedia.org/wiki/MS-DOS" },
   { name: "MUMPS", released: new Date("1966-06-01"), link: "https://en.wikipedia.org/wiki/MUMPS" },
