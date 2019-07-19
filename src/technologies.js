@@ -84,6 +84,7 @@ const technologies = [
   { name: "IBM Notes", released: new Date("1989-12-07"), link: "https://en.wikipedia.org/wiki/IBM_Notes" },
   { name: "Inferno JS", released: new Date("2015-12-19"), link: "https://infernojs.org", icon: "infernojs" },
   { name: "Ionic", released: new Date("2013-11-01"), icon: "ionic", link: "https://ionicframework.com/" },
+  { name: "iOS", released: new Date("2007-06-29"), link: "https://www.apple.com/ios/" },
   { name: "Istio", released: new Date("2018-07-31"), link: "https://istio.io/" },
   { name: "Java", released: new Date("1996-01-23"), icon: "java", link: "https://www.java.com/" },
   { name: "JavaScript", released: new Date("1995-12-04"), icon: "javaScript", link: "https://www.javascript.com/" },
