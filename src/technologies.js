@@ -87,7 +87,7 @@ const technologies = [
   { name: "iOS", released: new Date("2007-06-29"), link: "https://www.apple.com/ios/" },
   { name: "Istio", released: new Date("2018-07-31"), link: "https://istio.io/" },
   { name: "Java", released: new Date("1996-01-23"), icon: "java", link: "https://www.java.com/" },
-  { name: "JavaScript", released: new Date("1995-12-04"), icon: "javaScript", link: "https://www.javascript.com/" },
+  { name: "JavaScript", released: new Date("1995-12-04"), icon: "javaScript", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
   { name: "Jekyll", released: new Date("2008-11-17"), icon: "jekyll", link: "https://jekyllrb.com/" },
   { name: "Jenkins (formerly Hudson)", released: new Date("2005-02-07"), icon: "jenkins", link: "https://jenkins.io/" },
   { name: "Joomla!", released: new Date("2005-08-17"), icon: "joomla", link: "https://www.joomla.org/" },
