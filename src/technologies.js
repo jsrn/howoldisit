@@ -226,6 +226,7 @@ const technologies = [
   { name: "Windows 10", released: new Date("2015-07-29"), icon: "windows", link: "https://www.microsoft.com/en-us/windows" },
   { name: "WordPress", released: new Date("2003-05-27"), icon: "wordpress", link: "https://wordpress.org/" },
   { name: "WPF", released: new Date("2006-12-21"), link: "https://en.wikipedia.org/wiki/Windows_Presentation_Foundation" },
+  { name: "WSL", released: new Date("2016-08-02"), link: "https://blogs.msdn.microsoft.com/wsl/" },
   { name: "Xamarin Forms", released: new Date("2014-05-28"), link: "https://github.com/xamarin/Xamarin.Forms" },
   { name: "XAML", released: new Date("2008-07-01"), link: "https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language" },
   { name: "XML", released: new Date("1998-02-10"), icon: "xml", link: "https://en.wikipedia.org/wiki/XML" },
