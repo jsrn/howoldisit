@@ -239,6 +239,9 @@ const technologies = [
   { name: "Zend Framework 2", released: new Date("2012-09-04"), link: "https://framework.zend.com/" },
   { name: "Zend Framework 3", released: new Date("2016-06-28"), link: "https://framework.zend.com/" },
   { name: "Zig", released: new Date("2015-08-05"), icon: "default", link: "https://ziglang.org/" },
+  { name: "Delphi", released: new Date("1995-01-01"), link: "https://en.wikipedia.org/wiki/Delphi_(IDE)" },
+  { name: "Prolog", released: new Date("1972-01-01"), link: "https://es.wikipedia.org/wiki/Prolog" },
+  { name: "Mithril.js", released: new Date("2016-01-01"), link: "http://mithril.js.org" }
 ];
 
 export default technologies;
