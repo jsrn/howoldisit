@@ -48,6 +48,7 @@ const technologies = [
   { name: "D3", released: new Date("2010-09-27"), link: "https://d3js.org/", icon: "d3" },
   { name: "Dart", released: new Date("2011-11-10"), link: "https://www.dartlang.org/" },
   { name: "Data Analysis Expressions (DAX)", released: new Date("2010-05-01"), link: "https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2012/gg399181(v=sql.110)" },
+  { name: "Delphi", released: new Date("1995-01-01"), link: "https://en.wikipedia.org/wiki/Delphi_(IDE)" },
   { name: "Direct3D", released: new Date("1996-06-02"), link: "https://docs.microsoft.com/en-us/windows/desktop/direct3d" },
   { name: "Django", released: new Date("2005-07-15"), icon: "django", link: "https://www.djangoproject.com/" },
   { name: "Docker", released: new Date("2013-03-13"), icon: "docker", link: "https://www.docker.com/" },
@@ -134,6 +135,7 @@ const technologies = [
   { name: "Microsoft Azure", released: new Date("2010-02-01"), link: "https://azure.microsoft.com/en-us/" },
   { name: "MIPS", released: new Date("1985-02-01"), link: "https://en.wikipedia.org/wiki/MIPS_architecture" },
   { name: "mIRC scripting language", released: new Date("1995-01-01"), link: "https://en.wikipedia.org/wiki/MIRC_scripting_language" },
+  { name: "Mithril.js", released: new Date("2016-01-01"), link: "http://mithril.js.org" },
   { name: "Mocha", released: new Date("2011-11-22"), link: "https://mochajs.org/" },
   { name: "MongoDB", released: new Date("2009-02-11"), icon: "mongoDB", link: "https://www.mongodb.com/" },
   { name: "MS-DOS", released: new Date("1981-08-12"), link: "https://en.wikipedia.org/wiki/MS-DOS" },
@@ -163,6 +165,7 @@ const technologies = [
   { name: "Power BI Embedded", released: new Date("2016-07-07"), link: "https://powerbi.microsoft.com/en-us/power-bi-embedded/" },
   { name: "Power Query M Formula Language", released: new Date("2015-07-24"), link: "https://msdn.microsoft.com/en-us/library/mt270235.aspx" },
   { name: "Preact", released: new Date("2015-09-11"), link: "https://preactjs.com/" },
+  { name: "Prolog", released: new Date("1972-01-01"), link: "https://es.wikipedia.org/wiki/Prolog" },
   { name: "Prometheus", released: new Date("2012-11-24"), icon: "prometheus", link: "https://prometheus.io/" },
   { name: "Protovis", released: new Date("2007-10-07"), link: "http://mbostock.github.io/protovis/" },
   { name: "PX4 Firmware", released: new Date("2014-10-25"), link: "https://px4.io/" },
@@ -241,10 +244,7 @@ const technologies = [
   { name: "Zend Framework 1", released: new Date("2007-06-30"), link: "https://framework.zend.com/" },
   { name: "Zend Framework 2", released: new Date("2012-09-04"), link: "https://framework.zend.com/" },
   { name: "Zend Framework 3", released: new Date("2016-06-28"), link: "https://framework.zend.com/" },
-  { name: "Zig", released: new Date("2015-08-05"), icon: "default", link: "https://ziglang.org/" },
-  { name: "Delphi", released: new Date("1995-01-01"), link: "https://en.wikipedia.org/wiki/Delphi_(IDE)" },
-  { name: "Prolog", released: new Date("1972-01-01"), link: "https://es.wikipedia.org/wiki/Prolog" },
-  { name: "Mithril.js", released: new Date("2016-01-01"), link: "http://mithril.js.org" }
+  { name: "Zig", released: new Date("2015-08-05"), icon: "default", link: "https://ziglang.org/" }
 ];
 
 export default technologies;
