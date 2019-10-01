@@ -111,6 +111,7 @@ const technologies = [
   { name: "Knockout", released: new Date("2010-08-05"), link: "https://knockoutjs.com/" },
   { name: "Kotlin", released: new Date("2011-07-01"), link: "https://kotlinlang.org/" },
   { name: "Kubernetes", released: new Date("2014-07-07"), link: "https://kubernetes.io/" },
+  { name: "KVM", released: new Date("2007-02-05"), icon: "linux", link: "https://www.linux-kvm.org/" },
   { name: "Laravel", released: new Date("2011-09-09"), icon: "laravel", link: "https://laravel.com/" },
   { name: "Laravel 4", released: new Date("2013-06-28"), icon: "laravel", link: "https://laravel.com/" },
   { name: "Laravel 5", released: new Date("2015-03-04"), icon: "laravel", link: "https://laravel.com/" },
