@@ -205,6 +205,7 @@ const technologies = [
   { name: "Symfony", released: new Date("2005-10-22"), icon: "symfony", link: "https://symfony.com/" },
   { name: "TeamCity", released: new Date("2006-10-02"), link: "https://www.jetbrains.com/teamcity" },
   { name: "Telegraf", released: new Date("2015-06-19"), link: "https://www.influxdata.com/time-series-platform/telegraf/" },
+  { name: "Telnet", released: new Date("1969-09-25"), link: "https://tools.ietf.org/html/rfc15" },
   { name: "Tensorflow", released: new Date("2015-12-09"), icon: "tensorflow", link: "https://www.tensorflow.org/" },
   { name: "Terraform", released: new Date("2014-08-28"), link: "https://www.terraform.io/" },
   { name: "The World Wide Web", released: new Date("1990-12-25"), icon: "www", link: "https://en.wikipedia.org/wiki/World_Wide_Web" },
