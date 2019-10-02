@@ -35,10 +35,10 @@ class App extends Component {
     })
   }
 
-  rowStyle(name) {
+  rowStyle(rowHidden) {
     let style = {};
 
-    if (name.toLowerCase().indexOf(this.state.filter.toLowerCase()) === -1) {
+    if (rowHidden) {
       style.display = "none";
     }
 
@@ -90,11 +90,15 @@ class App extends Component {
   render() {
     let rows = [];
     let options = [];
-   
+    let atLeastOneRowShown = false;
     for (const tech of this.state.technologies) {
       let years = this.yearsSince(tech.released);
+      const rowHidden = tech.name.toLowerCase().indexOf(this.state.filter.toLowerCase()) === -1;
+      if(!rowHidden) {
+        atLeastOneRowShown = true;
+      }
       rows.push(
-        <p key={tech.name} style={this.rowStyle(tech.name)}>
+        <p key={tech.name} style={this.rowStyle(rowHidden)}>
           <a target={tech.link ? "_blank": ""} rel='noopener noreferrer' href={tech.link || '#'}>
             <Icon icon={tech.icon} />
             <strong>{tech.name}</strong>
@@ -133,6 +137,8 @@ class App extends Component {
           </div>    
 
           {rows}
+
+          {!atLeastOneRowShown && <p>No technology found by name <strong>{this.state.filter}</strong>.</p>}
 
           <div id="footer">
             <p>Missing a technology? Find this repo on <a href="https://github.com/jsrn/howoldisit">GitHub</a>. Want a piece of me? Hurl abuse on <a href="https://twitter.com/jsrndoftime">Twitter</a>.
