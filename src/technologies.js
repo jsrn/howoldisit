@@ -200,6 +200,7 @@ const technologies = [
   { name: "scikit-image", released: new Date("2019-04-02"), link: "https://scikit-image.org" },
   { name: "scikit-learn", released: new Date("2007-06-01"), link: "http://scikit-learn.org/" },
   { name: "Serverless Framework", released: new Date("2015-12-01"), link: "https://serverless.com/" },
+  { name: "Sequelize", released: new Date("2010-07-18"), link: "https://sequelize.org/" },
   { name: "Shiny", released: new Date("2012-11-12"), links: "https://shiny.rstudio.com/" },
   { name: "Smalltalk", released: new Date("1980-01-01"), link: "https://en.wikipedia.org/wiki/Smalltalk" },
   { name: "Solidity", released: new Date("2014-08-01"), link: "https://en.wikipedia.org/wiki/Solidity" },
