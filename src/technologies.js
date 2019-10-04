@@ -229,6 +229,7 @@ const technologies = [
   { name: "WebRTC", released: new Date("2011-05-04"), link: "https://webrtc.org/" },
   { name: "Websockets", released: new Date("2011-12-01"), link: "https://www.websocket.org/" },
   { name: "Windows 10", released: new Date("2015-07-29"), icon: "windows", link: "https://www.microsoft.com/en-us/windows" },
+  { name: "Windows 1.0", released: new Date("1985-11-20"), icon: "windows", link: "https://en.wikipedia.org/wiki/Windows_1.0" },
   { name: "WordPress", released: new Date("2003-05-27"), icon: "wordpress", link: "https://wordpress.org/" },
   { name: "WPF", released: new Date("2006-12-21"), link: "https://en.wikipedia.org/wiki/Windows_Presentation_Foundation" },
   { name: "WSL", released: new Date("2016-08-02"), icon: "windows", link: "https://blogs.msdn.microsoft.com/wsl/" },
