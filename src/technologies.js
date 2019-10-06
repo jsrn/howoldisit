@@ -105,6 +105,7 @@ const technologies = [
   { name: "jQuery", released: new Date("2006-08-26"), icon: "jquery", link: "https://jquery.com/" },
   { name: "JSON", released: new Date("2001-03-01"), link: "https://json.org/" },
   { name: "jssm", released: new Date("2017-05-03") },
+  { name: "Jython", released: new Date("2001-01-17"), link: "https://www.jython.org" },
   { name: "Julia", released: new Date("2012-01-01"), link: "https://julialang.org/" },
   { name: "Kafka (Apache)", released: new Date("2011-08-15"), icon: "kafka", link: "https://kafka.apache.org/" },
   { name: "Karaf", released: new Date("2010-08-23"), link: "https://karaf.apache.org/" },
