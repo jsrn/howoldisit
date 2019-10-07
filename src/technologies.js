@@ -218,6 +218,7 @@ const technologies = [
   { name: "Twig", released: new Date("2009-09-12"), link: "https://en.wikipedia.org/wiki/Twig_(template_engine)" },
   { name: "TypeScript", released: new Date("2012-10-01"), icon: "typeScript", link: "https://www.typescriptlang.org/" },
   { name: "Ubuntu", released: new Date("2004-10-20"), link: "https://www.ubuntu.com" },
+  { name: "Umbrella JS", released: new Date("2017-07-16"), link: "https://umbrellajs.com" },
   { name: "Underscore.js", released: new Date("2009-10-28"), link: "https://underscorejs.org/" },
   { name: "Unity (Game Engine)", released: new Date("2005-06-06"), icon: "unityGameEngine", link: "https://unity3d.com/" },
   { name: "Unreal Engine 4 (Game Engine)", released: new Date("2012-07-06"), icon: "unrealEngine", link: "https://www.unrealengine.com/" },
