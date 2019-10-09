@@ -20,7 +20,7 @@ class App extends Component {
     this.rowStyle = this.rowStyle.bind(this);
   }
 
-  componentDidMount() {
+  componentDidMount = () => {
     const filter = decodeURI(window.location.hash.slice(1)); //remove the # symbol
     this.filterInput.current.value = filter;
     this.setState({
@@ -28,14 +28,15 @@ class App extends Component {
     });
   }
 
-  filterChanged(event) {
-    window.location.hash = event.target.value;
+  filterChanged = event => {
+    const { value } = event.target;
+    window.location.hash = value;
     this.setState({
-      filter: event.target.value
+      filter: value
     })
   }
 
-  rowStyle(rowHidden) {
+  rowStyle = rowHidden => {
     let style = {};
 
     if (rowHidden) {
@@ -45,14 +46,13 @@ class App extends Component {
     return style;
   }
 
-  yearsSince(date) {
+  yearsSince = date => {
     return Math.floor((new Date() - new Date(date)) / (365 * 60 * 24 * 1000 * 60));
   }
 
-  handleSort = (e) => {
-    let sortBy = this.state.sortBy;
-    let newSort = e.target.innerText.toLowerCase();
-    let orderDesc = this.state.orderDesc;
+  handleSort = event => {
+    const { sortBy, orderDesc } = this.state;
+    const newSort = event.target.innerText.toLowerCase();
   
     this.setState({
       orderDesc: sortBy === newSort ? !orderDesc : false,
@@ -60,22 +60,22 @@ class App extends Component {
     }, () => this.orderTechnologies());
   }
 
-  orderTechnologies(){
-    let techList = JSON.parse(JSON.stringify(this.state.technologies));
-    let orderDesc = this.state.orderDesc;
+  orderTechnologies = () => {
+    const { sortBy, orderDesc, technologies } = this.state;
+    const techList = JSON.parse(JSON.stringify(technologies));
 
-    if(this.state.sortBy === 'tech'){
+    if (sortBy === 'tech'){
       techList.sort((a, b) => {
-        let aName = a.name.toLowerCase();
-        let bName = b.name.toLowerCase();
+        const aName = a.name.toLowerCase();
+        const bName = b.name.toLowerCase();
         if (aName > bName) return orderDesc ? -1 : 1;
         if (aName < bName) return orderDesc ? 1 : -1;
         return 0;
       });
-    }else{
+    } else {
       techList.sort((a, b) => {
-        let aRel = a.released;
-        let bRel = b.released;
+        const aRel = a.released;
+        const bRel = b.released;
         if (aRel > bRel) return orderDesc ? 1 : -1;
         if (aRel < bRel) return orderDesc ? -1 : 1;
         return 0;
@@ -87,13 +87,14 @@ class App extends Component {
     });
   }
 
-  render() {
+  render = () => {
+    const { filter, technologies, orderDesc, sortBy } = this.state;
     let rows = [];
     let options = [];
     let atLeastOneRowShown = false;
-    for (const tech of this.state.technologies) {
-      let years = this.yearsSince(tech.released);
-      const rowHidden = tech.name.toLowerCase().indexOf(this.state.filter.toLowerCase()) === -1;
+    for (const tech of technologies) {
+      const years = this.yearsSince(tech.released);
+      const rowHidden = tech.name.toLowerCase().indexOf(filter.toLowerCase()) === -1;
       if(!rowHidden) {
         atLeastOneRowShown = true;
       }
@@ -125,20 +126,20 @@ class App extends Component {
           
           <div className="inline">
             <p className="inline">Order by </p>
-            <div className={this.state.sortBy === "tech" ? "inline bold" : "inline"} onClick={this.handleSort}>
+            <div className={sortBy === "tech" ? "inline bold" : "inline"} onClick={this.handleSort}>
               Tech
             </div>
-            {this.state.sortBy === "tech" && <div className={this.state.orderDesc ? "arrow arrow-down" : "arrow arrow-up"} />}
+            {sortBy === "tech" && <div className={orderDesc ? "arrow arrow-down" : "arrow arrow-up"} />}
             <p className="inline">, </p>           
-            <div className={this.state.sortBy !== "tech" ? "inline bold" : "inline"} onClick={this.handleSort}>
+            <div className={sortBy !== "tech" ? "inline bold" : "inline"} onClick={this.handleSort}>
               Age
             </div>
-            {this.state.sortBy !== "tech" && <div className={this.state.orderDesc ? "arrow arrow-down" : "arrow arrow-up"} />}
+            {sortBy !== "tech" && <div className={orderDesc ? "arrow arrow-down" : "arrow arrow-up"} />}
           </div>    
 
           {rows}
 
-          {!atLeastOneRowShown && <p>No technology found by name <strong>{this.state.filter}</strong>.</p>}
+          {!atLeastOneRowShown && <p>No technology found by name <strong>{filter}</strong>.</p>}
 
           <div id="footer">
             <p>Missing a technology? Find this repo on <a href="https://github.com/jsrn/howoldisit">GitHub</a>. Want a piece of me? Hurl abuse on <a href="https://twitter.com/jsrndoftime">Twitter</a>.
