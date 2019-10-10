@@ -46,7 +46,7 @@ class App extends Component {
   }
 
   yearsSince(date) {
-    return Math.floor((new Date() - new Date(date)) / (365 * 60 * 24 * 1000 * 60));
+    return Math.floor((new Date().getTime() - date.getTime()) / (365 * 60 * 24 * 1000 * 60));
   }
 
   handleSort = (e) => {
