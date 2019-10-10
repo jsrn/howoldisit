@@ -55,6 +55,7 @@ const technologies = [
   { name: "Delphi", released: new Date("1995-01-01"), link: "https://en.wikipedia.org/wiki/Delphi_(IDE)" },
   { name: "Direct3D", released: new Date("1996-06-02"), link: "https://docs.microsoft.com/en-us/windows/desktop/direct3d" },
   { name: "Django", released: new Date("2005-07-15"), icon: "django", link: "https://www.djangoproject.com/" },
+  { name: "Dojo Toolkit", released: new Date("2005-03-01"), link: "https://dojotoolkit.org/" },
   { name: "Docker", released: new Date("2013-03-13"), icon: "docker", link: "https://www.docker.com/" },
   { name: "Dronecode SDK", released: new Date("2017-12-07"), link: "https://www.dronecode.org" },
   { name: "Drupal", released: new Date("2000-05-18"), icon: "drupal", link: "https://www.drupal.org/" },
