@@ -4,8 +4,8 @@ import './App.css';
 import Icon from './icon';
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       filter: "",
