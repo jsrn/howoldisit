@@ -247,6 +247,7 @@ const technologies = [
   { name: "Visual Studio Code", released: new Date("2015-04-29"), link: "https://code.visualstudio.com/" },
   { name: "Vue", released: new Date("2014-02-01"), icon: "vue", link: "https://vuejs.org/" },
   { name: "Vulkan", released: new Date("2016-02-16"), link: "https://www.khronos.org/vulkan/" },
+  { name: "WebdriverIO", released: new Date("2012-05-17"), link: "https://webdriver.io/" },
   { name: "Webpack", released: new Date("2012-03-10"), link: "https://webpack.js.org/", icon: "webpack" },
   { name: "WebRTC", released: new Date("2011-05-04"), link: "https://webrtc.org/" },
   { name: "Websockets", released: new Date("2011-12-01"), link: "https://www.websocket.org/" },
