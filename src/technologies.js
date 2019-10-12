@@ -157,6 +157,7 @@ const technologies = [
   { name: "Nginx", released: new Date("2004-10-04"), link: "https://www.nginx.com/", icon: "nginx" },
   { name: "Node.js", released: new Date("2009-05-27"), icon: "nodeJs", link: "https://nodejs.org/" },
   { name: "Numpy", released: new Date("2006-08-26"), link: "http://www.numpy.org/" },
+  { name: "Nuxt", released: new Date("2016-10-26"), link: "https://nuxtjs.org/" },
   { name: "Objective-C", released: new Date("1984-01-01"), link: "https://en.wikipedia.org/wiki/Objective-C" },
   { name: "OCaml", released: new Date("1996-01-01"), link: "https://ocaml.org/" },
   { name: "Odin", released: new Date("2016-07-07"), link: "https://odin.handmade.network/" },
