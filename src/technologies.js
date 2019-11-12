@@ -53,6 +53,7 @@ const technologies = [
   { name: "Dart", released: new Date("2011-11-10"), link: "https://www.dartlang.org/" },
   { name: "Data Analysis Expressions (DAX)", released: new Date("2010-05-01"), link: "https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2012/gg399181(v=sql.110)" },
   { name: "Delphi", released: new Date("1995-01-01"), link: "https://en.wikipedia.org/wiki/Delphi_(IDE)" },
+  { name: "Deno", released: new Date("2018-05-13"), link: "https://deno.land/" },
   { name: "Direct3D", released: new Date("1996-06-02"), link: "https://docs.microsoft.com/en-us/windows/desktop/direct3d" },
   { name: "Django", released: new Date("2005-07-15"), icon: "django", link: "https://www.djangoproject.com/" },
   { name: "Docker", released: new Date("2013-03-13"), icon: "docker", link: "https://www.docker.com/" },
