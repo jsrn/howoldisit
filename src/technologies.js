@@ -195,6 +195,7 @@ const technologies = [
   { name: "Ramda", released: new Date("2013-05-29"), icon: "react", link: "https://ramdajs.com/" },
   { name: "React", released: new Date("2013-05-29"), icon: "react", link: "https://reactjs.org/" },
   { name: "React Native", released: new Date("2016-03-24"), icon: "react", link: "https://facebook.github.io/react-native/" },
+  { name: "ReasonML", released: new Date("2016-05-16"), link: "https://reasonml.github.io/" },
   { name: "Redis", released: new Date("2009-06-10"), icon: "redis", link: "https://redis.io/" },
   { name: "Redux", released: new Date("2015-06-02"), link: "https://redux.js.org/", icon: "redux" },
   { name: "REST API", released: new Date("2000-01-01"), link: "https://restfulapi.net/" },
