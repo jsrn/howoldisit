@@ -23,6 +23,10 @@ Check the list of [open issues](https://github.com/jsrn/howoldisit/issues?q=is%3
 
 All contributions are welcome, no matter how obscure the technology!
 
+### How old is "how old?"
+
+Sometimes it's difficult to determine the exact date a project was made publicly available. Sometimes there is a large gap between the public release and the "official" launch. If there is uncertainty over which date to pick when adding a technology, aim for the earlier of the two.
+
 ## Credits
 
 * This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
