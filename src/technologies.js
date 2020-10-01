@@ -40,6 +40,7 @@ const technologies = [
   { name: "Chef", released: new Date("2009-01-15"), icon: "chef", link: "https://www.chef.io/" },
   { name: "Clojure", released: new Date("2007-10-16"), link: "https://clojure.org/" },
   { name: "COBOL", released: new Date("1959-01-01"), link: "https://en.wikipedia.org/wiki/COBOL" },
+  { name: "CockroachDB", released: new Date("2015-02-22"), link: "https://www.cockroachlabs.com/"},
   { name: "CodeIgniter", released: new Date("2006-03-28"), icon: "codeIgniter", link: "https://codeigniter.com/" },
   { name: "CoffeeScript", released: new Date("2009-12-13"), link: "http://coffeescript.org" },
   { name: "ColdFusion", released: new Date("1995-07-02"), link: "https://en.wikipedia.org/wiki/Adobe_ColdFusion" },
