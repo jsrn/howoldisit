@@ -245,6 +245,7 @@ const technologies = [
   { name: "Umbrella JS", released: new Date("2017-07-16"), link: "https://umbrellajs.com" },
   { name: "Underscore.js", released: new Date("2009-10-28"), link: "https://underscorejs.org/" },
   { name: "Unity (Game Engine)", released: new Date("2005-06-06"), icon: "unityGameEngine", link: "https://unity3d.com/" },
+  { name: "Unreal (Game Engine)", released: new Date("1998-05-01"), icon: "unrealGameEngine", link: "https://www.unrealengine.com/en-US/what-is-unreal-engine-4"},
   { name: "Unreal Engine 4 (Game Engine)", released: new Date("2012-07-06"), icon: "unrealEngine", link: "https://www.unrealengine.com/" },
   { name: "Visual Basic 6", released: new Date("1998-06-01"), icon: "basic", link: "https://en.wikipedia.org/wiki/Visual_Basic" },
   { name: "Visual Studio Code", released: new Date("2015-04-29"), link: "https://code.visualstudio.com/" },
