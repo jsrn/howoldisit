@@ -146,6 +146,7 @@ const technologies = [
   { name: "Mesos (Apache)", released: new Date("2010-09-30"), link: "http://mesos.apache.org/" },
   { name: "Metal", released: new Date("2014-06-02"), link: "https://en.wikipedia.org/wiki/Metal_(API)" },
   { name: "Meteor", released: new Date("2012-01-20"), icon: "meteor" },
+  { name: "Micronaut", released: new Date("2018-03-17"), link: "https://micronaut.io/" },
   { name: "Microsoft Azure", released: new Date("2010-02-01"), link: "https://azure.microsoft.com/en-us/" },
   { name: "MIPS", released: new Date("1985-02-01"), link: "https://en.wikipedia.org/wiki/MIPS_architecture" },
   { name: "mIRC scripting language", released: new Date("1995-01-01"), link: "https://en.wikipedia.org/wiki/MIRC_scripting_language" },
