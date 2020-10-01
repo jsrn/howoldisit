@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/howoldisit/precache-manifest.e8d40e029e38d05833c4ec21f2e4cdb0.js"
+  "/howoldisit/precache-manifest.5d919675b6554cbbe03ce8aa971e213c.js"
 );
 
 workbox.clientsClaim();
