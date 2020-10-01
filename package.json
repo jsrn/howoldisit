@@ -2,6 +2,7 @@
   "name": "howoldisit",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://jsrn.net/howoldisit",
   "dependencies": {
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
