@@ -15,7 +15,6 @@
   justify-content: center;
   font-size: .9rem;
   color: white;
-  position: fixed;
   width: 100%;
   z-index: 10;
   position: sticky;
@@ -76,7 +75,7 @@ main p a {
 
 .arrow {
   border-left: 5px solid transparent;
-  border-right: 5px solid transparent;  
+  border-right: 5px solid transparent;
   display: inline-block;
   margin-right: 5px;
   margin-left: 5px;
