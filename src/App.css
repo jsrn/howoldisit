@@ -13,8 +13,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: .9rem;
   color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 .App-link {
@@ -40,6 +43,19 @@ main {
   margin: 0 auto;
   font-size: 1.5em;
   padding: 5px;
+  padding-top: 15vh;
+}
+
+@media (max-width: 700px) {
+  main {
+    padding-top: 20vh;
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    padding-top: 25vh;
+  }
 }
 
 main p {

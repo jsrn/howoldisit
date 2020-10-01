@@ -49,7 +49,7 @@ In order to update your local environment to the latest version on master, you w
 
 #### Updating your local branch
 
-Maybe you have been working on a feature or fix that took so time to finish, most likely there are new changes in the `master ` and your local repository is behind. In order to update it to the latest you need to pull the latest changes to develop and then rebase your current branch.
+Maybe you have been working on a feature or fix that took some time to finish, most likely there are new changes in the `master ` and your local repository is behind. In order to update it to the latest you need to pull the latest changes to develop and then rebase your current branch.
 
 ```javascript
 $ git pull upstream master
