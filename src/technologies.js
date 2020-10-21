@@ -269,6 +269,7 @@ const technologies = [
   { name: "XAML", released: new Date("2008-07-01"), link: "https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language" },
   { name: "XML", released: new Date("1998-02-10"), icon: "xml", link: "https://en.wikipedia.org/wiki/XML" },
   { name: "YAML", released: new Date("2001-05-11"), link: "https://yaml.org/" },
+  { name: "Yarn", released: new Date("2016-06-18"), link: "https://yarnpkg.com" },
   { name: "Yii", released: new Date("2006-10-01"), link: "https://www.yiiframework.com/" },
   { name: "Zend Framework 0.1.1", released: new Date("2006-03-03"), link: "https://framework.zend.com/" },
   { name: "Zend Framework 1", released: new Date("2007-06-30"), link: "https://framework.zend.com/" },
