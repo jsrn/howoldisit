@@ -173,6 +173,7 @@ const technologies = [
   { name: "Objective-C", released: new Date("1984-01-01"), link: "https://en.wikipedia.org/wiki/Objective-C" },
   { name: "OCaml", released: new Date("1996-01-01"), link: "https://ocaml.org/" },
   { name: "Odin", released: new Date("2016-07-07"), link: "https://odin.handmade.network/" },
+  { name: "Odoo", released: new Date("2005-02-01"), link: "https://www.odoo.com/" },
   { name: "OpenGL", released: new Date("1992-06-30"), link: "https://www.opengl.org/" },
   { name: "OpenStack", released: new Date("2010-10-21"), icon: "openstack", link: "https://www.openstack.org/" },
   { name: "Oracle Database", released: new Date("1979"), link: "https://www.oracle.com/database/" },
