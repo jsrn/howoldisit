@@ -24,6 +24,7 @@ const technologies = [
   { name: "BackBoneJS", released: new Date("2010-10-13"), icon: "backbone", link: "https://backbonejs.org/" },
   { name: "Bash", released: new Date("1989-06-08"), link: "https://en.wikipedia.org/wiki/Bash_(Unix_shell)" },
   { name: "BASIC", released: new Date("1964-05-01"), link: "https://en.wikipedia.org/wiki/BASIC" },
+  { name: "Bootstrap", released: new Date("2011-08-19"), icon: "bootstrap", link: "https://getbootstrap.com/" },
   { name: "Bootstrap 2", released: new Date("2012-01-31"), icon: "bootstrap", link: "https://getbootstrap.com/" },
   { name: "Bootstrap 3", released: new Date("2013-08-19"), icon: "bootstrap", link: "https://getbootstrap.com/" },
   { name: "Bootstrap 4", released: new Date("2018-01-18"), icon: "bootstrap", link: "https://getbootstrap.com/" },
