@@ -74,6 +74,7 @@ const technologies = [
   { name: "Express.js", released: new Date("2010-11-16"), link: "https://expressjs.com/" },
   { name: "F#", released: new Date("2005-06-21"), link: "https://fsharp.org/" },
   { name: "Fastify", released: new Date("2016-10-17"), link: "https://www.fastify.io/" },
+  { name: "FastAPI", released: new Date("2019-02-04"), link: "https://fastapi.tiangolo.com/" },
   { name: "Firebase", released: new Date("2012-04-01"), icon: "Firebase", link: "https://firebase.google.com/" },
   { name: "Flask", released: new Date("2010-04-01"), link: "https://en.wikipedia.org/wiki/Flask_(web_framework)" },
   { name: "Flutter", released: new Date("2017-06-12"), link: "https://flutter.io/" },
