@@ -18,6 +18,8 @@ const technologies = [
   { name: "Assembly", released: new Date("1949-01-01"), icon: "asm", link: "https://en.wikipedia.org/wiki/Assembly_language" },
   { name: "Aurelia", released: new Date("2014-12-10"), link: "https://aurelia.io/" },
   { name: "AutoIt", released: new Date("1999-01-01"), link: "https://www.autoitscript.com/site/" },
+  { name: "Azure Purview", released: new Date("2020-12-03"), link: "https://azure.microsoft.com/services/purview/" },
+  { name: "Azure Synapse Analytics", released: new Date("2020-12-03"), link: "https://azure.microsoft.com/services/synapse-analytics/" },
   { name: "B", released: new Date("1969"), link: "https://en.wikipedia.org/wiki/B_(programming_language)" },
   { name: "Babbage Assembly", released: new Date("1971-01-01"), link: "https://en.wikipedia.org/wiki/Babbage_(programming_language)" },
   { name: "Babel", released: new Date("2014-09-28"), link: "https://babeljs.io/" },
