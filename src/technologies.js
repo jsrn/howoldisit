@@ -108,6 +108,7 @@ const technologies = [
   { name: "IBM Notes", released: new Date("1989-12-07"), link: "https://en.wikipedia.org/wiki/IBM_Notes" },
   { name: "IBM WebSphere Application Server", released: new Date("1998-06-22"), link: "https://en.wikipedia.org/wiki/IBM_WebSphere_Application_Server" },
   { name: "Inferno JS", released: new Date("2015-12-19"), link: "https://infernojs.org", icon: "infernojs" },
+  { name: "Infinidash", released: new Date("2021-06-17"), link: "https://twitter.com/jna_sh/status/1410178986978775040?s=20" },
   { name: "InfluxDB", released: new Date("2013-09-24"), link: "https://www.influxdata.com/products/influxdb-overview/" },
   { name: "Intellij IDEA", released: new Date("2001-01-01"), link: "https://www.jetbrains.com/idea/" },
   { name: "Ionic", released: new Date("2013-11-01"), icon: "ionic", link: "https://ionicframework.com/" },
