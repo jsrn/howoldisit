@@ -240,6 +240,7 @@ const technologies = [
   { name: "Snowpack", released: new Date("2019-02-26"), link: "https://www.snowpack.dev/" },
   { name: "Solidity", released: new Date("2014-08-01"), link: "https://en.wikipedia.org/wiki/Solidity" },
   { name: "Spark (Apache)", released: new Date("2014-06-26"), link: "https://spark.apache.org/" },
+  { name: "Spock Framework", released: new Date("2019-03-05"), link: "https://spockframework.org/" },
   { name: "Spring", released: new Date("2002-10-01"), link: "https://spring.io/" },
   { name: "SQL", released: new Date("1979-06-01"), link: "https://docs.oracle.com/cd/E12151_01/index.htm" },
   { name: "Subversion (Apache)", released: new Date("2000-10-20"), link: "https://subversion.apache.org/" },
