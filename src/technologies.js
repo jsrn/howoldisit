@@ -30,6 +30,7 @@ const technologies = [
   { name: "Bootstrap 2", released: new Date("2012-01-31"), icon: "bootstrap", link: "https://getbootstrap.com/" },
   { name: "Bootstrap 3", released: new Date("2013-08-19"), icon: "bootstrap", link: "https://getbootstrap.com/" },
   { name: "Bootstrap 4", released: new Date("2018-01-18"), icon: "bootstrap", link: "https://getbootstrap.com/" },
+  { name: "Bootstrap 5", released: new Date("2021-05-05"), icon: "bootstrap", link: "https://getbootstrap.com/" },
   { name: "Brainfuck", released: new Date("1993-09-01"), link: "https://en.wikipedia.org/wiki/Brainfuck" },
   { name: "Bugzilla", released: new Date("1998-08-26"), link: "https://www.bugzilla.org/" },
   { name: "Bulma", released: new Date("2016-01-24"), link: "https://bulma.io/" },
