@@ -201,6 +201,7 @@ const technologies = [
   { name: "Preact", released: new Date("2015-09-11"), link: "https://preactjs.com/" },
   { name: "Prolog", released: new Date("1972-01-01"), link: "https://es.wikipedia.org/wiki/Prolog" },
   { name: "Prometheus", released: new Date("2012-11-24"), icon: "prometheus", link: "https://prometheus.io/" },
+  { name: "Protocol Buffers", released: new Date("2008-07-07"), link: "https://developers.google.com/protocol-buffers/"},
   { name: "Protovis", released: new Date("2007-10-07"), link: "http://mbostock.github.io/protovis/" },
   { name: "PX4 Firmware", released: new Date("2014-10-25"), link: "https://px4.io/" },
   { name: "Pyramid", released: new Date("2008-07-08"), link: "https://trypyramid.com" },
