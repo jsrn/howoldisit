@@ -173,6 +173,7 @@ const technologies = [
   { name: "Nette", released: new Date("2013-06-03"), link: "https://www.nette.org/" },
   { name: "NextJS", released: new Date("2016-10-25"), link: "https://nextjs.org/" },
   { name: "Nginx", released: new Date("2004-10-04"), link: "https://www.nginx.com/", icon: "nginx" },
+  { name: "Nix", released: new Date("2003-06-16"), link: "https://nixos.org/" },
   { name: "Node.js", released: new Date("2009-05-27"), icon: "nodeJs", link: "https://nodejs.org/" },
   { name: "NPM", released: new Date("2010-01-12"), link: "https://www.npmjs.com/" },
   { name: "Numpy", released: new Date("2006-08-26"), link: "http://www.numpy.org/" },
