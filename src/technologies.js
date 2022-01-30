@@ -43,6 +43,7 @@ const technologies = [
   { name: "Ceylon", released: new Date("2011-01-01"), link: "https://ceylon-lang.org/" },
   { name: "CFML", released: new Date("1995-07-02"), link: "https://en.wikipedia.org/wiki/ColdFusion_Markup_Language" },
   { name: "Chef", released: new Date("2009-01-15"), icon: "chef", link: "https://www.chef.io/" },
+  { name: "ClickHouse", released: new Date("2016-06-15"), link: "https://clickhouse.com/" },
   { name: "Clojure", released: new Date("2007-10-16"), link: "https://clojure.org/" },
   { name: "COBOL", released: new Date("1959-01-01"), link: "https://en.wikipedia.org/wiki/COBOL" },
   { name: "CockroachDB", released: new Date("2015-02-22"), link: "https://www.cockroachlabs.com/"},
