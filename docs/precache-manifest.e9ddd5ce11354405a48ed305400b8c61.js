@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4a4f4064c49966abd8a2",
+    "revision": "fbf25cd643b2efe61101",
     "url": "/howoldisit/static/css/main.8b27b0a9.chunk.css"
   },
   {
-    "revision": "4a4f4064c49966abd8a2",
-    "url": "/howoldisit/static/js/main.4a4f4064.chunk.js"
+    "revision": "fbf25cd643b2efe61101",
+    "url": "/howoldisit/static/js/main.fbf25cd6.chunk.js"
   },
   {
     "revision": "468182ff4a6f7232e1c6",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/howoldisit/static/js/runtime~main.b15666cd.js"
   },
   {
-    "revision": "0a26b8376786f125e26b6b1983777608",
+    "revision": "68944738fb3849f63cefcafb9e8cf89e",
     "url": "/howoldisit/index.html"
   }
 ];
