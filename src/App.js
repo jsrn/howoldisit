@@ -53,7 +53,7 @@ class App extends Component {
     let sortBy = this.state.sortBy;
     let newSort = e.target.innerText.toLowerCase();
     let orderDesc = this.state.orderDesc;
-  
+
     this.setState({
       orderDesc: sortBy === newSort ? !orderDesc : false,
       sortBy: newSort
@@ -122,26 +122,26 @@ class App extends Component {
 
         <main>
           <p>This is a handy tool for tech recruiters who ask for fifteen years experience in technologies that have only existed for three months.</p>
-          
+
           <div className="inline">
             <p className="inline">Order by </p>
             <div className={this.state.sortBy === "tech" ? "inline bold" : "inline"} onClick={this.handleSort}>
               Tech
             </div>
             {this.state.sortBy === "tech" && <div className={this.state.orderDesc ? "arrow arrow-down" : "arrow arrow-up"} />}
-            <p className="inline">, </p>           
+            <p className="inline">, </p>
             <div className={this.state.sortBy !== "tech" ? "inline bold" : "inline"} onClick={this.handleSort}>
               Age
             </div>
             {this.state.sortBy !== "tech" && <div className={this.state.orderDesc ? "arrow arrow-down" : "arrow arrow-up"} />}
-          </div>    
+          </div>
 
           {rows}
 
           {!atLeastOneRowShown && <p>No technology found by name <strong>{this.state.filter}</strong>.</p>}
 
           <div id="footer">
-            <p>Missing a technology? Find this repo on <a href="https://github.com/jsrn/howoldisit">GitHub</a>. Want a piece of me? Hurl abuse on <a href="https://twitter.com/jsrndoftime">Twitter</a>.
+            <p>Missing a technology? Find this repo on <a href="https://github.com/jsrn/howoldisit">GitHub</a>. Want a piece of me? Hurl abuse on <a href="https://twitter.com/zerosumjames">Twitter</a>.
             </p>
           </div>
 
