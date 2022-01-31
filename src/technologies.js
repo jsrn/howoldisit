@@ -216,6 +216,7 @@ const technologies = [
   { name: "R", released: new Date("1993-08-01"), icon: "r", links: "https://www.r-project.org/" },
   { name: "RabbitMQ", released: new Date("2007-02-08"), link: "https://www.rabbitmq.com/" },
   { name: "Racket", released: new Date("1995-01-01"), icon: "racket", link: "https://racket-lang.org/" },
+  { name: "Raku", released: new Date("2015-12-25"), link: "https://raku.org/" },
   { name: "Ramda", released: new Date("2013-05-29"), icon: "react", link: "https://ramdajs.com/" },
   { name: "React", released: new Date("2013-05-29"), icon: "react", link: "https://reactjs.org/" },
   { name: "React Native", released: new Date("2016-03-24"), icon: "react", link: "https://facebook.github.io/react-native/" },
