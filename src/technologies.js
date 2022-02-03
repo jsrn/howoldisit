@@ -90,6 +90,7 @@ const technologies = [
   { name: "Ghost", released: new Date("2013-10-14"), link: "https://ghost.org/" },
   { name: "Git", released: new Date("2005-04-03"), icon: "git", link: "https://git-scm.com/" },
   { name: "Go", released: new Date("2009-10-10"), icon: "go", link: "https://golang.org/" },
+  { name: "Godot (GDScript, Game Engine)", released: new Date("2014-01-14"), link: "https://godotengine.org/" },
   { name: "Gradle", released: new Date("2008-04-21"), icon: "gradle", link: "https://gradle.org/" },
   { name: "Grafana", released: new Date("2013-12-11"), icon: "grafana", link: "https://grafana.com/" },
   { name: "Grails", released: new Date("2006-03-29"), link: "https://grails.org" },
