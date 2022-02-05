@@ -6,8 +6,7 @@ Welcome to this non-exhaustive list of technologies and their approximate ages. 
 
 ## Running the Project
 
-1. Install the dependencies by running `npm install` or `yarn install`.
-2. Run the application by running `npm start` or `yarn start`.
+Run `ruby build.rb` to update the HTML template from your list of technologies and view the site in your browser of choice.
 
 ## Adding a Technology
 
