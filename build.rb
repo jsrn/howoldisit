@@ -47,7 +47,7 @@ end.join
 
 dropdown_html = technologies.map do |tech|
   <<-HTML
-  <option value="#{tech['name']}">
+  <option value="#{tech['name']}"></option>
   HTML
 end.join
 
