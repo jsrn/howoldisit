@@ -11,7 +11,7 @@ Welcome to this non-exhaustive list of technologies and their approximate ages. 
 
 ## Adding a Technology
 
-New technologies should be added to `src/technologies.js`.
+New technologies should be added to `technologies.json` in alphabetical order.
 
 We're interested in:
 
@@ -29,7 +29,7 @@ Sometimes it's difficult to determine the exact date a project was made publicly
 
 ## Credits
 
-* This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* This project was originally bootstrapped with [Create React App](https://github.com/facebook/create-react-app), but is now generated HTML with a little JS to work the dropdown.
 * A big thanks to [all of the contributors](https://github.com/jsrn/howoldisit/graphs/contributors) for massively expanding this beyond the tiny handful of technologies I had listed to begin with.
 * Unreal Engine icon by iconscout on icons8.com
 
