@@ -2,7 +2,7 @@ const dropdown = document.getElementById("tech-dropdown");
 const techList = document.getElementById("rows");
 
 dropdown.addEventListener("input", function(e) {
-  const searchTerm = e.target.value;
+  const searchTerm = e.target.value.trim();
 
   Array.from(techList.getElementsByTagName("p")).forEach((element) => {
     if (
