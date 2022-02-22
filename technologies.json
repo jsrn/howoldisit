@@ -1328,6 +1328,12 @@
     "link": "https://www.khronos.org/vulkan/"
   },
   {
+    "icon": "wasm",
+    "name": "WebAssembly ",
+    "released": "2015-06-17",
+    "link": "https://webassembly.org/"
+  },
+  {
     "name": "WebdriverIO",
     "released": "2012-05-17",
     "link": "https://webdriver.io/"
