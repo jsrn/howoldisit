@@ -15,3 +15,25 @@ dropdown.addEventListener("input", function(e) {
     }
   });
 });
+
+const dateFieldList = document.getElementsByClassName("date-field");
+Array.from(dateFieldList).forEach((dateField) => {
+  const today = new Date();
+  const then = new Date(dateField.dataset.date);
+
+  var ageDifMs = today - then;
+  var ageDate = new Date(ageDifMs);
+  const yearsOld = Math.abs(ageDate.getUTCFullYear() - 1970);
+
+  let text = "";
+
+  if (yearsOld === 0) {
+    text = "hardly any time at all!";
+  } else if (yearsOld === 1) {
+    text = "1 year";
+  } else {
+    text = `${yearsOld} years`;
+  }
+
+  dateField.innerText = text;
+});

@@ -14,7 +14,7 @@
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="manifest.json" />
-    <script src="app.js" defer></script>
+    <script defer src="app.js" defer></script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -28,8 +28,7 @@
   </head>
   <body>
     <noscript>
-      You need to enable <a href="https://www.javascript.com/">JavaScript</a> to
-      run this app. Available since: 1995-12-04
+      JavaScript (available since 1995-12-04) is not enabled. Dates accurate as of whenever I last generated the static HTML.
     </noscript>
     <div class="App">
       <header class="App-header">

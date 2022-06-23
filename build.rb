@@ -40,7 +40,7 @@ technology_html = technologies.map do |tech|
     <a target="_blank" rel='noopener noreferrer' href="#{tech['link']}">
       #{icon(tech['icon'])}
       <strong>#{tech['name']}</strong>
-    </a> has been out for <strong>#{years_since(tech['released'])}</strong>
+    </a> has been out for <strong class="date-field" data-date="#{tech['released']}">#{years_since(tech['released'])}</strong>
   </p>
   HTML
 end.join
