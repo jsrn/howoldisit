@@ -1155,6 +1155,11 @@
     "link": "https://en.wikipedia.org/wiki/Smalltalk"
   },
   {
+    "name": "SNOBOL",
+    "released": "1962-01-01",
+    "link": "https://en.wikipedia.org/wiki/SNOBOL"
+  },
+  {
     "name": "Snowpack",
     "released": "2019-02-26",
     "link": "https://www.snowpack.dev/"
