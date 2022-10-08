@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="code.ico" />
+    <link rel="stylesheet" href="app.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="app.js" defer></script>
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>You want HOW MANY years experience?!</title>
+  </head>
+  <body>
+    <noscript>
+      JavaScript (available since 1995-12-04) is not enabled. Dates accurate as of whenever I last generated the static HTML.
+    </noscript>
+    <div class="App">
+      <header class="App-header">
+        <h1>How long has <input id="tech-dropdown" type="search" list="technologies" placeholder="react, vue, ember, etc." onChange={this.filterChanged} ref={this.filterInput} /> existed?
+          <datalist id="technologies">DROPDOWN_OPTIONS</datalist></h1>
+      </header>
+
+      <main>
+        <p>Thinking of asking for five years of experience in a two year old technology? Think again!</p>
+
+        <div id="rows">
+          TECH_GOES_HERE
+        </div>
+
+        <div id="footer">
+          <p>Missing a technology? Find this repo on <a href="https://github.com/jsrn/howoldisit">GitHub</a>. Want a piece of me? Hurl abuse on <a href="https://twitter.com/zerosumjames">Twitter</a>.
+          </p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
