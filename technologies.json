@@ -1191,6 +1191,11 @@
     "link": "https://docs.oracle.com/cd/E12151_01/index.htm"
   },
   {
+    "name": "SSH",
+    "released": "1995-07-12",
+    "link": "https://www.ssh.com/academy/ssh"
+  },
+  {
     "name": "Subversion (Apache)",
     "released": "2000-10-20",
     "link": "https://subversion.apache.org/"
