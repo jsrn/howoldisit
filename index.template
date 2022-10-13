@@ -24,7 +24,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>You want HOW MANY years experience?!</title>
+    <title>TITLE_TEXT</title>
   </head>
   <body>
     <noscript>
@@ -32,19 +32,19 @@
     </noscript>
     <div class="App">
       <header class="App-header">
-        <h1>How long has <input id="tech-dropdown" type="search" list="technologies" placeholder="react, vue, ember, etc." onChange={this.filterChanged} ref={this.filterInput} /> existed?
+        <h1>HOW_LONG_TEXT <input id="tech-dropdown" type="search" list="technologies" placeholder="react, vue, ember, etc." onChange={this.filterChanged} ref={this.filterInput} /> EXISTED_TEXT
           <datalist id="technologies">DROPDOWN_OPTIONS</datalist></h1>
       </header>
 
       <main>
-        <p>Thinking of asking for five years of experience in a two year old technology? Think again!</p>
+        <p>MAIN_TEXT</p>
 
         <div id="rows">
           TECH_GOES_HERE
         </div>
 
         <div id="footer">
-          <p>Missing a technology? Find this repo on <a href="https://github.com/jsrn/howoldisit">GitHub</a>. Want a piece of me? Hurl abuse on <a href="https://twitter.com/zerosumjames">Twitter</a>.
+          <p>FOOTER_TEXT
           </p>
         </div>
       </main>
