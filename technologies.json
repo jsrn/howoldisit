@@ -408,6 +408,11 @@
     "link": "https://en.wikipedia.org/wiki/Flask_(web_framework)"
   },
   {
+    "name": "Flyway",
+    "released": "2010-06-11",
+    "link": "https://flywaydb.org/"
+  },
+  {
     "name": "Flutter",
     "released": "2017-06-12",
     "link": "https://flutter.io/"
