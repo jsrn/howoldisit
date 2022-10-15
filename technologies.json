@@ -198,6 +198,11 @@
     "link": "https://cakephp.org/"
   },
   {
+    "name": "Capacitor",
+    "released": "2018-05-22",
+    "link": "https://capacitorjs.com/"
+  },
+  {
     "name": "Cassandra",
     "released": "2010-04-12",
     "link": "http://cassandra.apache.org/"
