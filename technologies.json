@@ -1212,6 +1212,11 @@
     "link": "https://developer.mozilla.org/en-US/docs/Web/SVG"
   },
   {
+    "name": "Swagger",
+    "released": "2011-09-01",
+    "link": "https://swagger.io/"
+  },
+  {
     "name": "Swift",
     "released": "2014-06-02",
     "icon": "swift",
