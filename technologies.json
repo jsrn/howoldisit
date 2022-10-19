@@ -198,6 +198,11 @@
     "link": "https://cakephp.org/"
   },
   {
+    "name": "Capacitor",
+    "released": "2018-05-22",
+    "link": "https://capacitorjs.com/"
+  },
+  {
     "name": "Cassandra",
     "released": "2010-04-12",
     "link": "http://cassandra.apache.org/"
@@ -406,6 +411,11 @@
     "name": "Flask",
     "released": "2010-04-01",
     "link": "https://en.wikipedia.org/wiki/Flask_(web_framework)"
+  },
+  {
+    "name": "Flyway",
+    "released": "2010-06-11",
+    "link": "https://flywaydb.org/"
   },
   {
     "name": "Flutter",
@@ -1186,6 +1196,11 @@
     "link": "https://docs.oracle.com/cd/E12151_01/index.htm"
   },
   {
+    "name": "SSH",
+    "released": "1995-07-12",
+    "link": "https://www.ssh.com/academy/ssh"
+  },
+  {
     "name": "Subversion (Apache)",
     "released": "2000-10-20",
     "link": "https://subversion.apache.org/"
@@ -1331,6 +1346,12 @@
     "name": "Vulkan",
     "released": "2016-02-16",
     "link": "https://www.khronos.org/vulkan/"
+  },
+  {
+    "icon": "wasm",
+    "name": "WebAssembly ",
+    "released": "2015-06-17",
+    "link": "https://webassembly.org/"
   },
   {
     "name": "WebdriverIO",
