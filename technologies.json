@@ -884,6 +884,11 @@
   },
   { "name": "Odoo", "released": "2005-02-01", "link": "https://www.odoo.com/" },
   {
+    "name": "OpenAPI Specification",
+    "released": "2011-08-10",
+    "link": "https://www.openapis.org/"
+  },
+  {
     "name": "OpenGL",
     "released": "1992-06-30",
     "link": "https://www.opengl.org/"
