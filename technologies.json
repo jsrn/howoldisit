@@ -346,6 +346,11 @@
     "link": "https://www.dronecode.org"
   },
   {
+    "name": "Dropwizard",
+    "released": "2011-12-21",
+    "link": "https://www.dropwizard.io/"
+  },
+  {
     "name": "Drupal",
     "released": "2000-05-18",
     "icon": "drupal",
@@ -516,6 +521,11 @@
     "link": "https://www.haskell.org/"
   },
   { "name": "Haxe", "released": "2005-01-01", "link": "https://haxe.org/" },
+  {
+    "name": "Helidon",
+    "released": "2018-09-01",
+    "link": "https://helidon.io/"
+  },
   {
     "name": "Hive (Apache)",
     "released": "2015-10-22",
