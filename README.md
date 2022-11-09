@@ -26,6 +26,10 @@ All contributions are welcome, no matter how obscure the technology!
 
 Sometimes it's difficult to determine the exact date a project was made publicly available. Sometimes there is a large gap between the public release and the "official" launch. If there is uncertainty over which date to pick when adding a technology, aim for the earlier of the two.
 
+### Other contributions ⚠️
+
+If you're interested in making a contribution other than adding or correcting a technology, please open an issue for feedback *before* you start. Changes that add new tooling dependencies or maintenance overhead probably won't be accepted without good reason. Thanks & sorry.
+
 ## Credits
 
 * This project was originally bootstrapped with [Create React App](https://github.com/facebook/create-react-app), but is now generated HTML with a little JS to work the dropdown.
